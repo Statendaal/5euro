@@ -1,0 +1,142 @@
+"jaar";"Risicogroep";"Omvang_aantal";"Omvang_aandeel";"Instroomkans";"Kenmerken_risicogroep";"Label";"Korte_naam";"Kenmerken"
+2016;"Totaal risicogroep";409560;3,3;6,5;;"Persoon behoort tot een van de risicogroepen";"Totaal risicogroep";"Persoon behoort tot een van de risicogroepen"
+2016;"Vermogen en verdachte van misdrijf";34530;0,3;3,7;;"Vermogen van minimaal 1000 euro en verdacht van een misdrijf in afgelopen 3 jaar";"Vermogen en verdacht van een misdrijf";"<ul><li>Vermogen van het huishouden 1 000 euro of meer</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden</li></ul>"
+2016;"Uitkering en verdachte van misdrijf";50080;0,4;12,2;;"Uitkering en verdachte van een misdrijf in afgelopen 3 jaar";"Uitkering en verdacht van een misdrijf";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li></ul>"
+2016;"Huishouden met kinderen en substantiële afname huishoudinkomen";76450;0,6;5,7;;"Huishouden met kinderen en substantiële afname huishoudinkomen in afgelopen 3 jaar";"Huishouden met kinderen en afname huishoudinkomen";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden</li>
+<li>Persoon had ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li></ul>"
+2016;"Huishouden met kinderen en huurwoning";127690;1;5,7;;"Huishouden met kinderen en huurwoning";"Huishouden met kinderen en huurwoning";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden</li>
+<li>Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li>
+<li>Woningbezit: huurwoning</li></ul>"
+2016;"Huishouden zonder kinderen en substantiële afname huishoudinkomen";85260;0,7;6,3;;"Huishouden zonder kinderen en substantiële afname huishoudinkomen in afgelopen 3 jaar";"Huishouden zonder kinderen en afname huishoudinkomen";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar zonder kinderen of eenpersoonshuishouden</li>
+<li>Persoon had ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li></ul>"
+2016;"Van werkend naar WW";26610;0,2;5,9;;"Van werkend naar WW in afgelopen 3 jaar";"Van werkend naar WW";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar zonder kinderen of eenpersoonshuishouden</li>
+<li>Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li>
+<li>Persoon is in 36 mnden voor peilmoment van werkend naar WW gegaan</li></ul>"
+2016;"Uit elkaar gegaan";8920;0,1;8,1;;"Uit elkaar gegaan in afgelopen 3 jaar";"Uit elkaar gegaan";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar zonder kinderen of eenpersoonshuishouden</li>
+<li>Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li>
+<li>Persoon is niet in 36 mnden voor peilmoment van werkend naar WW gegaan</li>
+<li>Persoon heeft in 36 mnden voor peilmoment uit elkaar gegaan met partner.</li></ul>"
+2017;"Totaal risicogroep";365100;3;4,3;;"Persoon behoort tot een van de risicogroepen";"Totaal risicogroep";"Persoon behoort tot een van de risicogroepen"
+2017;"Vermogen en verdachte van misdrijf";33060;0,3;2,8;;"Vermogen van minimaal 1000 euro en verdacht van een misdrijf in afgelopen 3 jaar";"Vermogen en verdacht van een misdrijf";"<ul><li>Vermogen van het huishouden 1 000 euro of meer</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden</li></ul>"
+2017;"Uitkering en verdachte van misdrijf";41320;0,3;9,2;;"Uitkering en verdachte van een misdrijf in afgelopen 3 jaar";"Uitkering en verdacht van een misdrijf";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li></ul>"
+2017;"Huishouden met kinderen en substantiële afname huishoudinkomen";61620;0,5;3,9;;"Huishouden met kinderen en substantiële afname huishoudinkomen in afgelopen 3 jaar";"Huishouden met kinderen en afname huishoudinkomen";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden</li>
+<li>Persoon had ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li></ul>"
+2017;"Huishouden met kinderen en huurwoning";124860;1;3;;"Huishouden met kinderen en huurwoning";"Huishouden met kinderen en huurwoning";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden</li>
+<li>Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li>
+<li>Woningbezit: huurwoning</li></ul>"
+2017;"Huishouden zonder kinderen en substantiële afname huishoudinkomen";75360;0,6;4,6;;"Huishouden zonder kinderen en substantiële afname huishoudinkomen in afgelopen 3 jaar";"Huishouden zonder kinderen en afname huishoudinkomen";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar zonder kinderen of eenpersoonshuishouden</li>
+<li>Persoon had ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li></ul>"
+2017;"Van werkend naar WW";20340;0,2;4,1;;"Van werkend naar WW in afgelopen 3 jaar";"Van werkend naar WW";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar zonder kinderen of eenpersoonshuishouden</li>
+<li>Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li>
+<li>Persoon is in 36 mnden voor peilmoment van werkend naar WW gegaan</li></ul>"
+2017;"Uit elkaar gegaan";8540;0,1;5,4;;"Uit elkaar gegaan in afgelopen 3 jaar";"Uit elkaar gegaan";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar zonder kinderen of eenpersoonshuishouden</li>
+<li>Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li>
+<li>Persoon is niet in 36 mnden voor peilmoment van werkend naar WW gegaan</li>
+<li>Persoon heeft in 36 mnden voor peilmoment uit elkaar gegaan met partner.</li></ul>"
+2018;"Totaal risicogroep";338800;2,7;6,5;;"Persoon behoort tot een van de risicogroepen";"Totaal risicogroep";"Persoon behoort tot een van de risicogroepen"
+2018;"Vermogen en verdachte van misdrijf";31720;0,3;4,7;"- Vermogen van het huishouden 1000 euro of meer;
+- Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, overig zonder inkomen of onbekend;
+- Persoon is ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf;
+- Type huishouden: paar met kinderen, eenoudershuishouden of overig huishouden.";"Vermogen van minimaal 1000 euro en verdacht van een misdrijf in afgelopen 3 jaar";"Vermogen en verdacht van een misdrijf";"<ul><li>Vermogen van het huishouden 1 000 euro of meer</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden</li></ul>"
+2018;"Uitkering en verdachte van misdrijf";36560;0,3;12,1;"- Vermogen van het huishouden: lager dan 1000 euro
+- Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, overig zonder inkomen of onbekend;
+- Persoon is ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf.";"Uitkering en verdachte van een misdrijf in afgelopen 3 jaar";"Uitkering en verdacht van een misdrijf";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li></ul>"
+2018;"Huishouden met kinderen en substantiële afname huishoudinkomen";45820;0,4;7;"- Vermogen van het huishouden: lager dan 1000 euro;
+- Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, overig zonder inkomen of onbekend;
+- Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf;
+- Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden;
+- Persoon had ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen.";"Huishouden met kinderen en substantiële afname huishoudinkomen in afgelopen 3 jaar";"Huishouden met kinderen en afname huishoudinkomen";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden</li>
+<li>Persoon had ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li></ul>"
+2018;"Huishouden met kinderen en huurwoning";133610;1,1;5;"- Vermogen van het huishouden: lager dan 1000 euro;
+- Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, overig zonder inkomen of onbekend;
+- Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf;
+- Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden;
+- Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen;
+- Woningbezit: huurwoning.";"Huishouden met kinderen en huurwoning";"Huishouden met kinderen en huurwoning";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar met kinderen, eenouderhuishouden of overig huishouden</li>
+<li>Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li>
+<li>Woningbezit: huurwoning</li></ul>"
+2018;"Huishouden zonder kinderen en substantiële afname huishoudinkomen";67060;0,5;6,6;"- Vermogen van het huishouden: lager dan 1000 euro;
+- Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, overig zonder inkomen of onbekend;
+- Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf;
+- Type huishouden: paar zonder kinderen of eenpersoonshuishouden;
+- Persoon had ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen.";"Huishouden zonder kinderen en substantiële afname huishoudinkomen in afgelopen 3 jaar";"Huishouden zonder kinderen en afname huishoudinkomen";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar zonder kinderen of eenpersoonshuishouden</li>
+<li>Persoon had ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li></ul>"
+2018;"Van werkend naar WW";15060;0,1;7,1;"- Vermogen van het huishouden: lager dan 1000 euro;
+- Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, overig zonder inkomen of onbekend;
+- Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf;
+- Type huishouden: paar zonder kinderen of eenpersoonshuishouden;
+- Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen;
+- Persoon is in 36 mnden voor peilmoment van werkend naar WW gegaan.";"Van werkend naar WW in afgelopen 3 jaar";"Van werkend naar WW";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar zonder kinderen of eenpersoonshuishouden</li>
+<li>Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li>
+<li>Persoon is in 36 mnden voor peilmoment van werkend naar WW gegaan</li></ul>"
+2018;"Uit elkaar gegaan";8980;0,1;7,9;"- Vermogen van het huishouden: lager dan 1000 euro;
+- Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, overig zonder inkomen of onbekend;
+- Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf;
+- Type huishouden: paar zonder kinderen of eenpersoonshuishouden;
+- Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen;
+- Persoon is niet in 36 mnden voor peilmoment van werkend naar WW gegaan; 
+- Persoon is in 36 mnden voor peilmoment uit elkaar gegaan met partner.";"Uit elkaar gegaan in afgelopen 3 jaar";"Uit elkaar gegaan";"<ul><li>Vermogen van het huishouden: lager dan 1 000 euro</li>
+<li>Belangrijkste inkomensbron van persoon: WW-, bijstands-, ziekte/AO- of overige sociale uitkering, zelfstandige, geen of onbekend inkomen</li>
+<li>Persoon is niet ergens in de afgelopen drie jaar geregistreerd als verdachte van een misdrijf</li>
+<li>Type huishouden: paar zonder kinderen of eenpersoonshuishouden</li>
+<li>Persoon had niet ergens in afgelopen 3 jaar te maken met substantiële afname van huishoudinkomen</li>
+<li>Persoon is niet in 36 mnden voor peilmoment van werkend naar WW gegaan</li>
+<li>Persoon heeft in 36 mnden voor peilmoment uit elkaar gegaan met partner.</li></ul>"
+2018;"Geen risicogroep";12247370;97,3;0,7;;"Persoon behoort tot geen enkele risicogroep";"Geen risicogroep";"Persoon behoort tot geen enkele risicogroep"

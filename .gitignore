@@ -1,0 +1,30 @@
+# Large CSV files - use converted versions for import
+cbs-data/*.converted
+cbs-data/Kenmerken.csv
+cbs-data/Kaart_NL.csv
+cbs-data/Langdurige_probleemschulden.csv
+cbs-data/Ontwikkeling_GM.csv
+
+# Node modules
+node_modules/
+smart-collection-demo/frontend/node_modules/
+smart-collection-demo/backend/node_modules/
+
+# Build outputs
+smart-collection-demo/frontend/dist/
+smart-collection-demo/frontend/build/
+
+# Environment files
+.env
+.env.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

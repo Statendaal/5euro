@@ -1,0 +1,356 @@
+"jaar";"gemeentecode";"gemeentenaam";"Risicogroep_aantal";"Risicogroep_aandeel";"Instroomkans"
+2018;"GM0003";"Appingedam";260;3,1;8,4
+2018;"GM0010";"Delfzijl";530;2,9;8,5
+2018;"GM0014";"Groningen";5890;3,4;5,5
+2018;"GM0024";"Loppersum";170;2,3;
+2018;"GM0034";"Almere";4630;3,4;7,2
+2018;"GM0037";"Stadskanaal";520;2,2;6,3
+2018;"GM0047";"Veendam";570;2,8;5,8
+2018;"GM0050";"Zeewolde";350;2,2;8
+2018;"GM0059";"Achtkarspelen";490;2,4;4,1
+2018;"GM0060";"Ameland";40;1,5;
+2018;"GM0072";"Harlingen";330;2,8;7
+2018;"GM0074";"Heerenveen";800;2,1;5,4
+2018;"GM0080";"Leeuwarden";2780;3,1;7,3
+2018;"GM0085";"Ooststellingwerf";380;2;4,7
+2018;"GM0086";"Opsterland";450;2;4
+2018;"GM0088";"Schiermonnikoog";20;2;
+2018;"GM0090";"Smallingerland";1050;2,6;7,7
+2018;"GM0093";"Terschelling";70;1,8;
+2018;"GM0096";"Vlieland";20;2,6;
+2018;"GM0098";"Weststellingwerf";410;2,1;4,2
+2018;"GM0106";"Assen";1220;2,5;7,1
+2018;"GM0109";"Coevorden";600;2,2;4,7
+2018;"GM0114";"Emmen";2190;2,8;5,4
+2018;"GM0118";"Hoogeveen";880;2,2;6,3
+2018;"GM0119";"Meppel";530;2,2;7,9
+2018;"GM0141";"Almelo";1820;3,6;8,5
+2018;"GM0147";"Borne";310;1,8;3,3
+2018;"GM0148";"Dalfsen";230;1;5,8
+2018;"GM0150";"Deventer";1900;2,7;7,4
+2018;"GM0153";"Enschede";4050;3,6;6,9
+2018;"GM0158";"Haaksbergen";320;1,7;6,6
+2018;"GM0160";"Hardenberg";750;1,7;6,4
+2018;"GM0163";"Hellendoorn";340;1,3;5,8
+2018;"GM0164";"Hengelo";1720;2,9;6,3
+2018;"GM0166";"Kampen";830;2,2;6,6
+2018;"GM0168";"Losser";290;1,7;6,8
+2018;"GM0171";"Noordoostpolder";720;2,2;6,6
+2018;"GM0173";"Oldenzaal";490;2;5,4
+2018;"GM0175";"Ommen";200;1,5;
+2018;"GM0177";"Raalte";360;1,3;4,1
+2018;"GM0180";"Staphorst";170;1,4;
+2018;"GM0183";"Tubbergen";120;0,8;
+2018;"GM0184";"Urk";190;1,5;7,3
+2018;"GM0189";"Wierden";260;1,4;
+2018;"GM0193";"Zwolle";2370;2,6;7,4
+2018;"GM0197";"Aalten";220;1,1;
+2018;"GM0200";"Apeldoorn";2700;2,3;6,5
+2018;"GM0202";"Arnhem";4710;4,3;6,8
+2018;"GM0203";"Barneveld";710;1,7;5,6
+2018;"GM0209";"Beuningen";360;1,8;4,1
+2018;"GM0213";"Brummen";280;1,7;3,9
+2018;"GM0214";"Buren";380;1,9;5,5
+2018;"GM0216";"Culemborg";470;2,3;4,7
+2018;"GM0221";"Doesburg";250;3;
+2018;"GM0222";"Doetinchem";980;2,3;6
+2018;"GM0225";"Druten";270;1,9;3,7
+2018;"GM0226";"Duiven";320;1,7;7,1
+2018;"GM0228";"Ede";1850;2,2;6,1
+2018;"GM0230";"Elburg";300;1,8;4,3
+2018;"GM0232";"Epe";470;1,9;6,3
+2018;"GM0233";"Ermelo";380;1,9;5,8
+2018;"GM0243";"Harderwijk";830;2,5;6,7
+2018;"GM0244";"Hattem";150;1,6;
+2018;"GM0246";"Heerde";200;1,4;
+2018;"GM0252";"Heumen";220;1,7;
+2018;"GM0262";"Lochem";410;1,6;5,9
+2018;"GM0263";"Maasdriel";400;2,2;5
+2018;"GM0267";"Nijkerk";500;1,6;5,4
+2018;"GM0268";"Nijmegen";4490;3,4;6,4
+2018;"GM0269";"Oldebroek";310;1,8;6,7
+2018;"GM0273";"Putten";290;1,6;6,2
+2018;"GM0274";"Renkum";450;1,9;8,2
+2018;"GM0275";"Rheden";850;2,6;5,7
+2018;"GM0277";"Rozendaal";10;1,1;
+2018;"GM0279";"Scherpenzeel";80;1,1;
+2018;"GM0281";"Tiel";970;3,3;6,6
+2018;"GM0285";"Voorst";250;1,3;5,2
+2018;"GM0289";"Wageningen";690;2,4;4,6
+2018;"GM0293";"Westervoort";270;2,4;7,5
+2018;"GM0294";"Winterswijk";510;2,4;4,3
+2018;"GM0296";"Wijchen";580;1,9;6,6
+2018;"GM0297";"Zaltbommel";460;2,3;3
+2018;"GM0299";"Zevenaar";650;2;6,5
+2018;"GM0301";"Zutphen";970;2,8;5,9
+2018;"GM0302";"Nunspeet";330;1,6;4
+2018;"GM0303";"Dronten";700;2,3;6,2
+2018;"GM0307";"Amersfoort";2740;2,5;6,1
+2018;"GM0308";"Baarn";340;1,9;6,2
+2018;"GM0310";"De Bilt";700;2,2;5,4
+2018;"GM0312";"Bunnik";150;1,3;6,8
+2018;"GM0313";"Bunschoten";210;1,4;6,6
+2018;"GM0317";"Eemnes";100;1,4;
+2018;"GM0321";"Houten";510;1,4;4,1
+2018;"GM0327";"Leusden";310;1,3;4,2
+2018;"GM0331";"Lopik";170;1,5;7,9
+2018;"GM0335";"Montfoort";120;1,2;
+2018;"GM0339";"Renswoude";40;1,1;
+2018;"GM0340";"Rhenen";260;1,8;5,3
+2018;"GM0342";"Soest";790;2,3;6,2
+2018;"GM0344";"Utrecht";8930;3,6;5,6
+2018;"GM0345";"Veenendaal";1040;2,2;5
+2018;"GM0351";"Woudenberg";160;1,7;
+2018;"GM0352";"Wijk bij Duurstede";310;1,7;7
+2018;"GM0353";"IJsselstein";510;2;4,3
+2018;"GM0355";"Zeist";1240;2,8;5,8
+2018;"GM0356";"Nieuwegein";1000;2,2;6,5
+2018;"GM0358";"Aalsmeer";380;1,6;6,8
+2018;"GM0361";"Alkmaar";2190;2,7;7,5
+2018;"GM0362";"Amstelveen";1470;2,3;4,8
+2018;"GM0363";"Amsterdam";30450;5,2;6,8
+2018;"GM0370";"Beemster";100;1,4;
+2018;"GM0373";"Bergen (NH.)";450;1,9;5,1
+2018;"GM0375";"Beverwijk";880;3;9,3
+2018;"GM0376";"Blaricum";170;2,1;8,8
+2018;"GM0377";"Bloemendaal";290;1,7;4,9
+2018;"GM0383";"Castricum";370;1,3;3,8
+2018;"GM0384";"Diemen";610;3;8,6
+2018;"GM0385";"Edam-Volendam";320;1,1;5,3
+2018;"GM0388";"Enkhuizen";330;2,4;6,3
+2018;"GM0392";"Haarlem";3190;2,8;6,8
+2018;"GM0394";"Haarlemmermeer";2150;1,9;6,7
+2018;"GM0396";"Heemskerk";640;2,2;7
+2018;"GM0397";"Heemstede";310;1,5;5,5
+2018;"GM0398";"Heerhugowaard";880;2,2;6,1
+2018;"GM0399";"Heiloo";260;1,4;5,7
+2018;"GM0400";"Den Helder";1200;2,9;6,2
+2018;"GM0402";"Hilversum";1860;2,9;7,5
+2018;"GM0405";"Hoorn";1610;3,1;7,3
+2018;"GM0406";"Huizen";760;2,5;6,2
+2018;"GM0415";"Landsmeer";210;2,4;5,3
+2018;"GM0416";"Langedijk";370;1,7;4,9
+2018;"GM0417";"Laren";180;2,2;7,8
+2018;"GM0420";"Medemblik";650;2;7,7
+2018;"GM0431";"Oostzaan";140;1,9;10
+2018;"GM0432";"Opmeer";120;1,3;
+2018;"GM0437";"Ouder-Amstel";210;2,1;5,9
+2018;"GM0439";"Purmerend";1520;2,6;7,3
+2018;"GM0441";"Schagen";580;1,6;3,8
+2018;"GM0448";"Texel";240;2,3;
+2018;"GM0450";"Uitgeest";150;1,4;8,7
+2018;"GM0451";"Uithoorn";480;2,2;10,5
+2018;"GM0453";"Velsen";1090;2,2;7,4
+2018;"GM0457";"Weesp";360;2,5;5,4
+2018;"GM0473";"Zandvoort";480;3,8;6,8
+2018;"GM0479";"Zaanstad";3550;3,2;6,8
+2018;"GM0482";"Alblasserdam";260;1,8;6,2
+2018;"GM0484";"Alphen aan den Rijn";1490;1,8;6,1
+2018;"GM0489";"Barendrecht";670;1,9;6,6
+2018;"GM0498";"Drechterland";230;1,5;5,3
+2018;"GM0501";"Brielle";240;1,8;5,4
+2018;"GM0502";"Capelle aan den IJssel";1420;3;6,8
+2018;"GM0503";"Delft";2220;2,9;6,2
+2018;"GM0505";"Dordrecht";2470;2,9;8,6
+2018;"GM0512";"Gorinchem";720;2,8;6,1
+2018;"GM0513";"Gouda";1530;2,9;7,4
+2018;"GM0518";"'s-Gravenhage";18180;5,2;7,6
+2018;"GM0523";"Hardinxveld-Giessendam";150;1,1;
+2018;"GM0530";"Hellevoetsluis";620;2,1;7
+2018;"GM0531";"Hendrik-Ido-Ambacht";370;1,7;3
+2018;"GM0532";"Stede Broec";290;1,8;5,4
+2018;"GM0534";"Hillegom";330;2;4,5
+2018;"GM0537";"Katwijk";780;1,6;6,9
+2018;"GM0542";"Krimpen aan den IJssel";440;2;5,7
+2018;"GM0546";"Leiden";2770;2,9;6
+2018;"GM0547";"Leiderdorp";350;1,7;4,5
+2018;"GM0553";"Lisse";280;1,6;7
+2018;"GM0556";"Maassluis";640;2,7;6,6
+2018;"GM0569";"Nieuwkoop";300;1,4;4,7
+2018;"GM0575";"Noordwijk";650;2;5,4
+2018;"GM0579";"Oegstgeest";300;1,7;5
+2018;"GM0589";"Oudewater";110;1,4;
+2018;"GM0590";"Papendrecht";390;1,6;7,6
+2018;"GM0597";"Ridderkerk";720;2,1;7,5
+2018;"GM0599";"Rotterdam";22060;5,2;7,6
+2018;"GM0603";"Rijswijk";1190;3,1;6
+2018;"GM0606";"Schiedam";2280;4,3;7,6
+2018;"GM0610";"Sliedrecht";360;2;5,9
+2018;"GM0613";"Albrandswaard";290;1,6;5,2
+2018;"GM0614";"Westvoorne";200;1,7;
+2018;"GM0622";"Vlaardingen";1630;3,2;8,8
+2018;"GM0626";"Voorschoten";370;2;7
+2018;"GM0627";"Waddinxveen";430;2,1;5,3
+2018;"GM0629";"Wassenaar";530;2,8;4,3
+2018;"GM0632";"Woerden";650;1,7;5,2
+2018;"GM0637";"Zoetermeer";2550;2,8;7,1
+2018;"GM0638";"Zoeterwoude";70;1,1;
+2018;"GM0642";"Zwijndrecht";880;2,7;6,9
+2018;"GM0654";"Borsele";260;1,5;6,5
+2018;"GM0664";"Goes";590;2,1;6,8
+2018;"GM0668";"West Maas en Waal";230;1,6;6,8
+2018;"GM0677";"Hulst";310;1,4;6,8
+2018;"GM0678";"Kapelle";130;1,4;
+2018;"GM0687";"Middelburg";770;2,1;7,4
+2018;"GM0703";"Reimerswaal";300;1,9;7,4
+2018;"GM0715";"Terneuzen";860;2,1;5,6
+2018;"GM0716";"Tholen";350;1,8;3,8
+2018;"GM0717";"Veere";220;1,3;6,3
+2018;"GM0718";"Vlissingen";920;2,8;6,3
+2018;"GM0736";"De Ronde Venen";720;2,1;4
+2018;"GM0737";"Tytsjerksteradiel";360;1,5;6,4
+2018;"GM0743";"Asten";210;1,6;6,1
+2018;"GM0744";"Baarle-Nassau";100;1,9;
+2018;"GM0748";"Bergen op Zoom";1530;3,2;5,5
+2018;"GM0753";"Best";380;1,7;6,6
+2018;"GM0755";"Boekel";110;1,4;
+2018;"GM0756";"Boxmeer";300;1,3;7,1
+2018;"GM0757";"Boxtel";410;1,8;8,3
+2018;"GM0758";"Breda";3440;2,5;7
+2018;"GM0762";"Deurne";390;1,6;5,3
+2018;"GM0765";"Pekela";280;3,2;6,8
+2018;"GM0766";"Dongen";310;1,6;5,8
+2018;"GM0770";"Eersel";170;1,1;6,1
+2018;"GM0772";"Eindhoven";5280;3,1;5,7
+2018;"GM0777";"Etten-Leur";690;2,1;7
+2018;"GM0779";"Geertruidenberg";300;1,9;5
+2018;"GM0784";"Gilze en Rijen";360;1,8;7,2
+2018;"GM0785";"Goirle";280;1,5;4
+2018;"GM0786";"Grave";200;2,2;
+2018;"GM0788";"Haaren";150;1,4;6,7
+2018;"GM0794";"Helmond";2200;3,4;6,4
+2018;"GM0796";"'s-Hertogenbosch";3220;2,8;6,2
+2018;"GM0797";"Heusden";670;2;6,2
+2018;"GM0798";"Hilvarenbeek";130;1,1;
+2018;"GM0809";"Loon op Zand";310;1,7;8,1
+2018;"GM0815";"Mill en Sint Hubert";120;1,4;
+2018;"GM0820";"Nuenen, Gerwen en Nederwetten";320;1,8;4,4
+2018;"GM0823";"Oirschot";160;1,1;9,6
+2018;"GM0824";"Oisterwijk";370;1,9;4,6
+2018;"GM0826";"Oosterhout";1010;2,4;6,3
+2018;"GM0828";"Oss";1680;2,5;6,5
+2018;"GM0840";"Rucphen";350;2;4,8
+2018;"GM0845";"Sint-Michielsgestel";280;1,3;
+2018;"GM0847";"Someren";230;1,5;
+2018;"GM0848";"Son en Breugel";170;1,4;7,5
+2018;"GM0851";"Steenbergen";330;1,8;7,3
+2018;"GM0852";"Waterland";220;1,6;
+2018;"GM0855";"Tilburg";4660;3;8,3
+2018;"GM0856";"Uden";700;2,2;5,1
+2018;"GM0858";"Valkenswaard";410;1,7;5,9
+2018;"GM0861";"Veldhoven";550;1,6;4
+2018;"GM0865";"Vught";350;1,8;4,3
+2018;"GM0866";"Waalre";230;1,7;
+2018;"GM0867";"Waalwijk";820;2,3;6
+2018;"GM0873";"Woensdrecht";250;1,5;8,2
+2018;"GM0879";"Zundert";300;1,8;8,1
+2018;"GM0880";"Wormerland";220;1,8;8,1
+2018;"GM0882";"Landgraaf";770;2,7;6,3
+2018;"GM0888";"Beek";220;1,7;4,6
+2018;"GM0889";"Beesel";160;1,6;
+2018;"GM0893";"Bergen (L.)";170;1,6;7,7
+2018;"GM0899";"Brunssum";580;2,7;5,6
+2018;"GM0907";"Gennep";210;1,6;10,7
+2018;"GM0917";"Heerlen";2410;3,9;6,8
+2018;"GM0928";"Kerkrade";1090;3,3;7,5
+2018;"GM0935";"Maastricht";2810;3,1;5,4
+2018;"GM0938";"Meerssen";220;1,5;5
+2018;"GM0944";"Mook en Middelaar";100;1,6;
+2018;"GM0946";"Nederweert";170;1,3;
+2018;"GM0957";"Roermond";1330;3,1;6,7
+2018;"GM0965";"Simpelveld";130;1,6;7,5
+2018;"GM0971";"Stein";270;1,3;5,6
+2018;"GM0981";"Vaals";240;3,2;5,5
+2018;"GM0983";"Venlo";2110;2,8;6,3
+2018;"GM0984";"Venray";710;2,2;5,4
+2018;"GM0986";"Voerendaal";170;1,7;6,4
+2018;"GM0988";"Weert";750;2;6,4
+2018;"GM0994";"Valkenburg aan de Geul";260;2;
+2018;"GM0995";"Lelystad";1820;3,6;7,2
+2018;"GM1507";"Horst aan de Maas";390;1,2;4,1
+2018;"GM1509";"Oude IJsselstreek";580;1,9;4,5
+2018;"GM1525";"Teylingen";460;1,7;6,5
+2018;"GM1581";"Utrechtse Heuvelrug";710;1,9;6,7
+2018;"GM1586";"Oost Gelre";270;1,2;
+2018;"GM1598";"Koggenland";250;1,4;4
+2018;"GM1621";"Lansingerland";810;1,8;5,5
+2018;"GM1640";"Leudal";320;1,1;5,3
+2018;"GM1641";"Maasgouw";290;1,6;5,9
+2018;"GM1652";"Gemert-Bakel";440;1,9;5,3
+2018;"GM1655";"Halderberge";470;2,1;5,6
+2018;"GM1658";"Heeze-Leende";150;1,2;
+2018;"GM1659";"Laarbeek";240;1,4;5
+2018;"GM1667";"Reusel-De Mierden";110;1;
+2018;"GM1669";"Roerdalen";210;1,3;4,9
+2018;"GM1674";"Roosendaal";1570;2,8;7,5
+2018;"GM1676";"Schouwen-Duiveland";520;2;7,7
+2018;"GM1680";"Aa en Hunze";310;1,6;3,9
+2018;"GM1681";"Borger-Odoorn";410;2,1;5,6
+2018;"GM1684";"Cuijk";440;2,3;6,7
+2018;"GM1685";"Landerd";180;1,5;5,5
+2018;"GM1690";"De Wolden";250;1,3;6,9
+2018;"GM1695";"Noord-Beveland";100;1,8;
+2018;"GM1696";"Wijdemeren";330;1,8;5,5
+2018;"GM1699";"Noordenveld";420;1,7;4,1
+2018;"GM1700";"Twenterand";500;2;3,6
+2018;"GM1701";"Westerveld";200;1,3;6,5
+2018;"GM1702";"Sint Anthonis";90;1;
+2018;"GM1705";"Lingewaard";520;1,5;5,7
+2018;"GM1706";"Cranendonck";250;1,6;4,4
+2018;"GM1708";"Steenwijkerland";660;2;6,4
+2018;"GM1709";"Moerdijk";540;1,9;6,2
+2018;"GM1711";"Echt-Susteren";420;1,7;4,5
+2018;"GM1714";"Sluis";310;1,7;5,4
+2018;"GM1719";"Drimmelen";260;1,2;4,2
+2018;"GM1721";"Bernheze";350;1,5;5,9
+2018;"GM1723";"Alphen-Chaam";130;1,6;
+2018;"GM1724";"Bergeijk";180;1,3;
+2018;"GM1728";"Bladel";190;1,2;5,2
+2018;"GM1729";"Gulpen-Wittem";160;1,4;
+2018;"GM1730";"Tynaarlo";350;1,4;6
+2018;"GM1731";"Midden-Drenthe";380;1,5;5,5
+2018;"GM1734";"Overbetuwe";620;1,7;3,7
+2018;"GM1735";"Hof van Twente";400;1,5;6
+2018;"GM1740";"Neder-Betuwe";310;1,8;4,2
+2018;"GM1742";"Rijssen-Holten";350;1,3;7,8
+2018;"GM1771";"Geldrop-Mierlo";570;1,9;2,8
+2018;"GM1773";"Olst-Wijhe";180;1,3;6,8
+2018;"GM1774";"Dinkelland";200;1;7
+2018;"GM1783";"Westland";1370;1,7;5,2
+2018;"GM1842";"Midden-Delfland";160;1;
+2018;"GM1859";"Berkelland";510;1,5;4,7
+2018;"GM1876";"Bronckhorst";390;1,4;4,1
+2018;"GM1883";"Sittard-Geleen";1850;2,6;6,4
+2018;"GM1884";"Kaag en Braassem";300;1,4;7,4
+2018;"GM1891";"Dantumadiel";290;2;5,5
+2018;"GM1892";"Zuidplas";630;2;4,9
+2018;"GM1894";"Peel en Maas";460;1,4;6,3
+2018;"GM1895";"Oldambt";720;2,6;7,3
+2018;"GM1896";"Zwartewaterland";220;1,3;
+2018;"GM1900";"Súdwest-Fryslân";1440;2,2;5,9
+2018;"GM1901";"Bodegraven-Reeuwijk";420;1,6;6
+2018;"GM1903";"Eijsden-Margraten";270;1,3;7,4
+2018;"GM1904";"Stichtse Vecht";880;1,8;4,9
+2018;"GM1911";"Hollands Kroon";630;1,7;5,2
+2018;"GM1916";"Leidschendam-Voorburg";1460;2,6;6,9
+2018;"GM1924";"Goeree-Overflakkee";560;1,5;5
+2018;"GM1926";"Pijnacker-Nootdorp";680;1,8;5,2
+2018;"GM1930";"Nissewaard";1630;2,6;8,7
+2018;"GM1931";"Krimpenerwaard";710;1,7;5,2
+2018;"GM1940";"De Fryske Marren";760;2;4,3
+2018;"GM1942";"Gooise Meren";820;2;7
+2018;"GM1945";"Berg en Dal";570;2,1;4,2
+2018;"GM1948";"Meierijstad";1100;1,8;6,4
+2018;"GM1949";"Waadhoeke";720;2,1;6,8
+2018;"GM1950";"Westerwolde";370;2;6,7
+2018;"GM1952";"Midden-Groningen";1200;2,7;7,4
+2018;"GM1954";"Beekdaelen";480;1,7;5,9
+2018;"GM1955";"Montferland";470;1,7;4,9
+2018;"GM1959";"Altena";710;1,7;5,1
+2018;"GM1960";"West Betuwe";580;1,5;3,6
+2018;"GM1961";"Vijfheerenlanden";810;2;8
+2018;"GM1963";"Hoeksche Waard";830;1,2;5,2
+2018;"GM1966";"Het Hogeland";720;2;4,8
+2018;"GM1969";"Westerkwartier";830;1,8;5,5
+2018;"GM1970";"Noardeast-Fryslân";750;2,2;4,7
+2018;"GM1978";"Molenlanden";400;1,2;3,5

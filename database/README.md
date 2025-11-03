@@ -192,3 +192,126 @@ organizations (1) ─── (N) debts (N) ─── (1) citizens
 - Success probability: 0.0-1.0 (decimaal percentage)
 - Timestamps: automatisch bijgehouden
 - Constraints: positive amounts, referential integrity
+
+## CBS Statistics Data
+
+### CBS Tables
+
+De database bevat nu ook CBS statistieken over schuldenproblematiek in Nederland:
+
+#### `cbs_ontwikkeling`
+Ontwikkeling aantal schuldenaren 2015-2024
+- 25 records met jaarlijkse cijfers
+- Totaal huishoudens en instromers
+
+#### `cbs_aantal_registraties`  
+Verdeling schulden over aantal bronnen
+- 84 records (2018-2024)
+- 1 tot 10+ verschillende schuldbronnen per huishouden
+
+#### `cbs_schuldregistraties`
+Schuldregistraties per type/organisatie
+- 94 records (2018-2024)
+- BKR, ZvW, Belastingdienst, CJIB, DUO, etc.
+
+### Key Statistics (2024)
+
+| Metric | Aantal | Percentage |
+|--------|--------|------------|
+| **Totaal huishoudens met schulden** | 747,560 | 8.9% |
+| Huishoudens zonder schulden | 7,628,340 | 91.1% |
+| Nieuwe instromers 2024 | 138,760 | 1.9% |
+
+### Top Schuldbronnen (2024)
+
+| Rank | Bron | Huishoudens | % |
+|------|------|-------------|---|
+| 1 | Belastingdienst - overige aanslagen | 336,150 | 45.0% |
+| 2 | BKR betalingsachterstand | 255,150 | 34.1% |
+| 3 | Belastingdienst - toeslagen | 199,450 | 26.7% |
+| 4 | ZvW wanbetaler | 196,110 | 26.2% |
+| 5 | CJIB boetes | 127,760 | 17.1% |
+
+### Risico Verdeling (Aantal Schuldbronnen)
+
+| Bronnen | Huishoudens | % | Risico |
+|---------|-------------|---|--------|
+| 1 bron | 428,380 | 57.3% | Laag |
+| 2-3 bronnen | 231,510 | 31.0% | Gemiddeld |
+| 4-5 bronnen | 74,660 | 10.0% | Hoog |
+| 6+ bronnen | 13,010 | 1.7% | Zeer hoog |
+
+### CBS Views
+
+```sql
+-- Laatste statistieken
+SELECT * FROM v_latest_stats;
+
+-- Top schuldbronnen 2024
+SELECT * FROM v_top_schuldbronnen_2024 LIMIT 10;
+
+-- Trend over tijd
+SELECT * FROM v_trend_schuldenaren;
+
+-- Meerdere schulden met risico
+SELECT * FROM v_meerdere_bronnen_2024;
+```
+
+### CBS Analysis Queries
+
+```sql
+-- Groei 2018-2024
+SELECT 
+    jaar,
+    TO_CHAR(schuldenaren, 'FM999,999') as schuldenaren,
+    aandeel_schuldenaren || '%' as percentage
+FROM cbs_ontwikkeling
+WHERE groep = 'Totaal huishoudens' 
+  AND jaar IN ('2018', '2024-01');
+
+-- Impact per schuldbron
+SELECT 
+    bron_label,
+    aantal,
+    ROUND(aantal * 13061.25) as geschatte_maatschappelijke_kosten_euro
+FROM cbs_schuldregistraties
+WHERE jaar = '2024-01'
+ORDER BY aantal DESC
+LIMIT 5;
+
+-- Hoogrisico huishoudens (4+ schuldbronnen)
+SELECT 
+    SUM(aantal) as totaal_hoogrisico,
+    ROUND(SUM(percentage), 1) || '%' as percentage
+FROM cbs_aantal_registraties
+WHERE jaar = '2024-01'
+  AND aantal_bronnen IN ('4 bronnen', '5 bronnen', '6 bronnen', '7 bronnen', '8 bronnen', '9 bronnen', '10 bronnen');
+```
+
+## Combined Analysis
+
+Combinatie van CBS data met simulatie resultaten:
+
+```sql
+-- Potentiële impact Smart Collection op CBS cijfers
+WITH cbs_stats AS (
+    SELECT schuldenaren FROM cbs_ontwikkeling 
+    WHERE jaar = '2024-01' AND groep = 'Totaal huishoudens'
+),
+sim_stats AS (
+    SELECT 
+        AVG(estimated_total_savings) as avg_saving_per_debt
+    FROM analysis_results
+    WHERE recommended_action = 'forgive'
+)
+SELECT 
+    'Totaal schuldenaren' as metric,
+    TO_CHAR(schuldenaren, 'FM999,999,999') as value
+FROM cbs_stats
+UNION ALL
+SELECT 
+    'Geschatte besparing bij 50% kwijtschelding',
+    '€' || TO_CHAR(ROUND(schuldenaren * 0.5 * avg_saving_per_debt / 1000000), 'FM999,999') || 'M'
+FROM cbs_stats, sim_stats;
+```
+
