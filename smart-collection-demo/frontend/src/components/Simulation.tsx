@@ -14,6 +14,7 @@ import {
   categoryDescriptions,
   SimulationScenario,
 } from "../simulationScenarios";
+import { StakeholderView } from "./StakeholderView";
 
 interface SimulationResult {
   scenario: SimulationScenario;
@@ -152,6 +153,9 @@ export function Simulation() {
         </div>
       </div>
 
+      {/* Stakeholder View */}
+      <StakeholderView />
+
       {/* Scenario Cards */}
       <div className="space-y-6">
         {Object.entries(groupedScenarios).map(([category, scenarios]) => (
@@ -228,14 +232,14 @@ export function Simulation() {
 
             {/* Summary Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+              <div className="bg-green-100 border-2 border-green-400 rounded-lg p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <TrendingUp className="w-5 h-5 text-green-600" />
+                  <TrendingUp className="w-5 h-5 text-green-700" />
                   <h4 className="font-semibold text-green-900">
                     Totale Besparing
                   </h4>
                 </div>
-                <p className="text-2xl font-bold text-green-700">
+                <p className="text-2xl font-bold text-green-900">
                   €
                   {results
                     .reduce((sum, r) => {
@@ -252,12 +256,12 @@ export function Simulation() {
                 </p>
               </div>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <div className="bg-blue-100 border-2 border-blue-400 rounded-lg p-4">
                 <div className="flex items-center gap-2 mb-2">
-                  <CheckCircle className="w-5 h-5 text-blue-600" />
+                  <CheckCircle className="w-5 h-5 text-blue-700" />
                   <h4 className="font-semibold text-blue-900">Kwijtschelden</h4>
                 </div>
-                <p className="text-2xl font-bold text-blue-700">
+                <p className="text-2xl font-bold text-blue-900">
                   {
                     results.filter(
                       (r) => r.analysis.recommendation.action === "forgive",
@@ -310,13 +314,16 @@ export function Simulation() {
                       </p>
                     </div>
                     <div
-                      className={`px-3 py-1 rounded-full text-xs font-medium ${
+                      className={`px-3 py-1 rounded-full text-xs font-semibold ${
                         result.analysis.recommendation.action === "forgive"
-                          ? "bg-green-100 text-green-700"
+                          ? "bg-green-200 text-green-900 border border-green-400"
                           : result.analysis.recommendation.action ===
                               "payment_plan"
-                            ? "bg-blue-100 text-blue-700"
-                            : "bg-gray-100 text-gray-700"
+                            ? "bg-blue-200 text-blue-900 border border-blue-400"
+                            : result.analysis.recommendation.action ===
+                                "refer_to_assistance"
+                              ? "bg-amber-200 text-amber-900 border border-amber-400"
+                              : "bg-gray-200 text-gray-900 border border-gray-400"
                       }`}
                     >
                       {result.analysis.recommendation.action === "forgive" &&
@@ -393,6 +400,114 @@ export function Simulation() {
                       {result.analysis.recommendation.reasoning[0]}
                     </p>
                   </div>
+
+                  {/* ML Statistics */}
+                  {(result.analysis as any).mlEnhanced &&
+                    (result.analysis as any).mlInsights && (
+                      <div className="mt-3 pt-3 border-t border-gray-200">
+                        <div className="flex items-center gap-2 mb-2">
+                          <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
+                          <p className="text-xs font-semibold text-purple-700">
+                            AI Model Analyse (Nauwkeurigheid:{" "}
+                            {(
+                              (result.analysis as any).mlInsights
+                                .modelAccuracy * 100
+                            ).toFixed(1)}
+                            %)
+                          </p>
+                        </div>
+
+                        {/* Confidence Score */}
+                        <div className="mb-2">
+                          <div className="flex justify-between text-xs mb-1">
+                            <span className="text-gray-600">Zekerheid:</span>
+                            <span className="font-medium text-purple-700">
+                              {result.analysis.recommendation.confidence.toFixed(
+                                1,
+                              )}
+                              %
+                            </span>
+                          </div>
+                          <div className="w-full bg-gray-200 rounded-full h-2">
+                            <div
+                              className="bg-purple-600 h-2 rounded-full transition-all"
+                              style={{
+                                width: `${result.analysis.recommendation.confidence}%`,
+                              }}
+                            ></div>
+                          </div>
+                        </div>
+
+                        {/* Alternative Probabilities */}
+                        <div className="space-y-1">
+                          <p className="text-xs text-gray-500 mb-1">
+                            Alternatieve kansen:
+                          </p>
+                          {Object.entries(
+                            (result.analysis as any).mlInsights.probabilities,
+                          )
+                            .sort((a, b) => (b[1] as number) - (a[1] as number))
+                            .map(([action, prob]) => (
+                              <div
+                                key={action}
+                                className="flex justify-between text-xs"
+                              >
+                                <span className="text-gray-600">
+                                  {action === "FORGIVE" && "🎯 Kwijtschelden"}
+                                  {action === "PAYMENT_PLAN" &&
+                                    "📋 Betalingsregeling"}
+                                  {action === "REFER_TO_ASSISTANCE" &&
+                                    "🤝 Doorverwijzen"}
+                                  {action === "REMINDER" && "📨 Invorderen"}
+                                </span>
+                                <span className="font-mono text-gray-700">
+                                  {((prob as number) * 100).toFixed(1)}%
+                                </span>
+                              </div>
+                            ))}
+                        </div>
+
+                        {/* Key Features Used */}
+                        <div className="mt-2 pt-2 border-t border-gray-100">
+                          <details className="text-xs">
+                            <summary className="text-gray-500 cursor-pointer hover:text-gray-700">
+                              Model features (
+                              {
+                                Object.keys(
+                                  (result.analysis as any).mlInsights.features,
+                                ).length
+                              }
+                              )
+                            </summary>
+                            <div className="mt-2 space-y-1 pl-2">
+                              {Object.entries(
+                                (result.analysis as any).mlInsights.features,
+                              )
+                                .slice(0, 6)
+                                .map(([key, value]) => (
+                                  <div
+                                    key={key}
+                                    className="flex justify-between"
+                                  >
+                                    <span className="text-gray-500">
+                                      {key}:
+                                    </span>
+                                    <span className="font-mono text-gray-700">
+                                      {typeof value === "boolean"
+                                        ? value
+                                          ? "✓"
+                                          : "✗"
+                                        : typeof value === "number"
+                                          ? value.toFixed(2)
+                                          : String(value)}
+                                    </span>
+                                  </div>
+                                ))}
+                            </div>
+                          </details>
+                        </div>
+                      </div>
+                    )}
                 </div>
               ))}
             </div>

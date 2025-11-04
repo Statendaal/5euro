@@ -1,46 +1,48 @@
 export enum DebtType {
-  CAK_EIGEN_BIJDRAGE = 'cak_eigen_bijdrage',
-  PARKEERBOETE = 'parkeerboete',
-  HONDENBELASTING = 'hondenbelasting',
-  AFVALSTOFFENHEFFING = 'afvalstoffenheffing',
-  BIJZONDERE_BIJSTAND = 'bijzondere_bijstand',
-  STUDIEFINANCIERING = 'studiefinanciering',
-  ZORGVERZEKERING_PREMIE = 'zorgverzekering_premie',
-  VERKEERSBOETE = 'verkeersboete',
+  CAK_EIGEN_BIJDRAGE = "cak_eigen_bijdrage",
+  PARKEERBOETE = "parkeerboete",
+  HONDENBELASTING = "hondenbelasting",
+  AFVALSTOFFENHEFFING = "afvalstoffenheffing",
+  BIJZONDERE_BIJSTAND = "bijzondere_bijstand",
+  STUDIEFINANCIERING = "studiefinanciering",
+  ZORGVERZEKERING_PREMIE = "zorgverzekering_premie",
+  VERKEERSBOETE = "verkeersboete",
 }
 
 export enum IncomeSource {
-  EMPLOYMENT = 'employment',
-  BENEFIT_UNEMPLOYMENT = 'benefit_unemployment',
-  BENEFIT_DISABILITY = 'benefit_disability',
-  BENEFIT_SOCIAL = 'benefit_social',
-  PENSION = 'pension',
-  SELF_EMPLOYED = 'self_employed',
-  NONE = 'none',
+  EMPLOYMENT = "employment",
+  BENEFIT_UNEMPLOYMENT = "benefit_unemployment",
+  BENEFIT_DISABILITY = "benefit_disability",
+  BENEFIT_SOCIAL = "benefit_social",
+  PENSION = "pension",
+  SELF_EMPLOYED = "self_employed",
+  NONE = "none",
 }
 
 export enum Recommendation {
-  COLLECT_STANDARD = 'collect_standard',
-  PAYMENT_PLAN = 'payment_plan',
-  CONSOLIDATE = 'consolidate',
-  FORGIVE = 'forgive',
-  REFER_TO_ASSISTANCE = 'refer_to_assistance',
+  COLLECT_STANDARD = "collect_standard",
+  PAYMENT_PLAN = "payment_plan",
+  CONSOLIDATE = "consolidate",
+  FORGIVE = "forgive",
+  REFER_TO_ASSISTANCE = "refer_to_assistance",
 }
 
 export interface DebtAnalysisRequest {
   debt: {
     amount: number;
-    type: DebtType;
-    originDate: string;
-    dueDate: string;
+    type: DebtType | string;
+    originDate?: string;
+    dueDate?: string;
+    id?: string;
   };
   citizen: {
-    bsn: string;
+    bsn?: string;
+    id?: string;
     income: number;
-    incomeSource: IncomeSource;
+    incomeSource: IncomeSource | string;
     otherDebtsCount: number;
     inDebtAssistance: boolean;
-    paymentHistory: Array<{
+    paymentHistory?: Array<{
       date: string;
       amount: number;
       daysLate: number;

@@ -28,3 +28,17 @@ smart-collection-demo/frontend/build/
 # OS
 .DS_Store
 Thumbs.db
+# Large CBS data files
+cbs-data/*.csv
+cbs-data/*.xlsx
+*.csv
+training_data*.csv
+
+# Model artifacts
+ml-model/*.pkl
+ml-model/*.joblib
+ml-model/training_data*.csv
+
+# Logs
+*.log
+*.pid

@@ -2,11 +2,18 @@ import { useState } from "react";
 import { DebtAnalysisForm } from "./components/DebtAnalysisForm";
 import { AnalysisResults } from "./components/AnalysisResults";
 import { Dashboard } from "./components/Dashboard";
+import { CBSDashboard } from "./components/CBSDashboard";
 import { Simulation } from "./components/Simulation";
 import { DebtAnalysisResponse } from "./types";
-import { BarChart3, FileText, LayoutDashboard, Play } from "lucide-react";
+import {
+  BarChart3,
+  FileText,
+  LayoutDashboard,
+  Play,
+  Database,
+} from "lucide-react";
 
-type Tab = "analyze" | "results" | "dashboard" | "simulation";
+type Tab = "analyze" | "results" | "dashboard" | "simulation" | "cbs";
 
 function App() {
   const [activeTab, setActiveTab] = useState<Tab>("simulation");
@@ -102,6 +109,20 @@ function App() {
               <LayoutDashboard className="w-5 h-5" />
               Dashboard
             </button>
+            <button
+              onClick={() => setActiveTab("cbs")}
+              className={`
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                ${
+                  activeTab === "cbs"
+                    ? "border-blue-500 text-blue-600"
+                    : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                }
+              `}
+            >
+              <Database className="w-5 h-5" />
+              CBS Data
+            </button>
           </nav>
         </div>
       </div>
@@ -116,6 +137,7 @@ function App() {
           <AnalysisResults analysis={analysisResult} />
         )}
         {activeTab === "dashboard" && <Dashboard />}
+        {activeTab === "cbs" && <CBSDashboard />}
       </main>
 
       {/* Footer */}

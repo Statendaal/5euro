@@ -74,6 +74,14 @@ export interface DebtAnalysisRequest {
       amount: number;
       daysLate: number;
     }>;
+    // Optional V2 model features
+    hasChildren?: boolean;
+    numChildren?: number;
+    isSingleParent?: boolean;
+    hasJeugdzorg?: boolean;
+    hasFlexWork?: boolean;
+    isZzp?: boolean;
+    ageCategory?: 'jong' | 'mid' | 'oud';
   };
 }
 

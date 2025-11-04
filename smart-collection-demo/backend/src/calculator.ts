@@ -7,7 +7,7 @@ import {
   ScenarioResult,
   Recommendation,
   IncomeSource,
-} from './types';
+} from "./types";
 
 export class CostCalculator {
   /**
@@ -28,7 +28,9 @@ export class CostCalculator {
   /**
    * Calculate success probability using simplified ML model
    */
-  private calculateSuccessProbability(request: DebtAnalysisRequest): SuccessFactors {
+  private calculateSuccessProbability(
+    request: DebtAnalysisRequest,
+  ): SuccessFactors {
     const { citizen, debt } = request;
 
     // Income factor (0-1): higher income = higher probability
@@ -36,7 +38,7 @@ export class CostCalculator {
 
     // Payment history factor (0-1)
     const avgDaysLate =
-      citizen.paymentHistory.length > 0
+      citizen.paymentHistory && citizen.paymentHistory.length > 0
         ? citizen.paymentHistory.reduce((sum, p) => sum + p.daysLate, 0) /
           citizen.paymentHistory.length
         : 30;
@@ -70,7 +72,7 @@ export class CostCalculator {
    */
   private calculateSocietalCosts(
     request: DebtAnalysisRequest,
-    riskScore: number
+    riskScore: number,
   ): SocietalCosts {
     const { citizen } = request;
 
@@ -165,7 +167,7 @@ export class CostCalculator {
 
     // Poor payment history
     const avgDaysLate =
-      citizen.paymentHistory.length > 0
+      citizen.paymentHistory && citizen.paymentHistory.length > 0
         ? citizen.paymentHistory.reduce((sum, p) => sum + p.daysLate, 0) /
           citizen.paymentHistory.length
         : 0;
@@ -190,17 +192,19 @@ export class CostCalculator {
     debtAmount: number,
     directCosts: DirectCosts,
     successProbability: number,
-    societalCosts: SocietalCosts
+    societalCosts: SocietalCosts,
   ): ScenarioResult[] {
     // Scenario 1: Payment plan
     const paymentPlanCosts = 40;
-    const paymentPlanSuccessProbability = Math.min(0.6, successProbability + 0.15);
+    const paymentPlanSuccessProbability = Math.min(
+      0.6,
+      successProbability + 0.15,
+    );
     const paymentPlan: ScenarioResult = {
       action: Recommendation.PAYMENT_PLAN,
       costs: paymentPlanCosts,
       expectedRevenue: debtAmount * paymentPlanSuccessProbability,
-      netResult:
-        debtAmount * paymentPlanSuccessProbability - paymentPlanCosts,
+      netResult: debtAmount * paymentPlanSuccessProbability - paymentPlanCosts,
       societalBenefit: societalCosts.totalSocietalCost * 0.4, // 40% reduction
       totalBenefit:
         debtAmount * paymentPlanSuccessProbability -
@@ -214,8 +218,7 @@ export class CostCalculator {
       action: Recommendation.CONSOLIDATE,
       costs: consolidationCosts,
       expectedRevenue: debtAmount * (successProbability + 0.1),
-      netResult:
-        debtAmount * (successProbability + 0.1) - consolidationCosts,
+      netResult: debtAmount * (successProbability + 0.1) - consolidationCosts,
       societalBenefit: societalCosts.totalSocietalCost * 0.3,
       totalBenefit:
         debtAmount * (successProbability + 0.1) -
@@ -248,7 +251,7 @@ export class CostCalculator {
     };
 
     return [paymentPlan, consolidation, forgiveness, referToAssistance].sort(
-      (a, b) => b.totalBenefit - a.totalBenefit
+      (a, b) => b.totalBenefit - a.totalBenefit,
     );
   }
 
@@ -261,7 +264,7 @@ export class CostCalculator {
     successProbability: number,
     societalCosts: SocietalCosts,
     riskScore: number,
-    alternatives: ScenarioResult[]
+    alternatives: ScenarioResult[],
   ): {
     action: Recommendation;
     confidence: number;
@@ -277,28 +280,28 @@ export class CostCalculator {
     // Decision logic
     if (costToDebtRatio > 10 && successProbability < 0.2) {
       reasoning.push(
-        `Invorderingskosten (€${directCosts.total.toFixed(0)}) zijn ${costToDebtRatio.toFixed(0)}× de schuld (€${debtAmount.toFixed(2)})`
+        `Invorderingskosten (€${directCosts.total.toFixed(0)}) zijn ${costToDebtRatio.toFixed(0)}× de schuld (€${debtAmount.toFixed(2)})`,
       );
       confidence += 30;
     }
 
     if (successProbability < 0.25) {
       reasoning.push(
-        `Succeskans inning is zeer laag (${(successProbability * 100).toFixed(0)}%)`
+        `Succeskans inning is zeer laag (${(successProbability * 100).toFixed(0)}%)`,
       );
       confidence += 25;
     }
 
     if (riskScore > 60) {
       reasoning.push(
-        `Burger heeft hoog risicoprofiel voor escalatie (score: ${riskScore}/100)`
+        `Burger heeft hoog risicoprofiel voor escalatie (score: ${riskScore}/100)`,
       );
       confidence += 20;
     }
 
     if (societalCosts.totalSocietalCost > 1000) {
       reasoning.push(
-        `Geschatte maatschappelijke kosten van €${societalCosts.totalSocietalCost.toFixed(0)} bij doorinnen`
+        `Geschatte maatschappelijke kosten van €${societalCosts.totalSocietalCost.toFixed(0)} bij doorinnen`,
       );
       confidence += 25;
     }
@@ -307,25 +310,25 @@ export class CostCalculator {
 
     if (bestAlternative.action === Recommendation.FORGIVE) {
       reasoning.push(
-        `Kwijtschelding kost slechts €${bestAlternative.costs} en voorkomt verdere schade`
+        `Kwijtschelding kost slechts €${bestAlternative.costs} en voorkomt verdere schade`,
       );
       suggestedSteps.push(
-        'Kwijtschelding goedkeuren',
-        'Verstuur vriendelijke brief met uitleg',
-        'Automatische doorverwijzing naar gemeentelijke schuldhulp',
-        'Meld bij Early Warning System voor monitoring'
+        "Kwijtschelding goedkeuren",
+        "Verstuur vriendelijke brief met uitleg",
+        "Automatische doorverwijzing naar gemeentelijke schuldhulp",
+        "Meld bij Early Warning System voor monitoring",
       );
     } else if (bestAlternative.action === Recommendation.PAYMENT_PLAN) {
       suggestedSteps.push(
-        'Bied betalingsregeling aan zonder juridische dreiging',
-        'Flexibele termijnen gebaseerd op inkomen',
-        'Geen extra kosten bij naleving'
+        "Bied betalingsregeling aan zonder juridische dreiging",
+        "Flexibele termijnen gebaseerd op inkomen",
+        "Geen extra kosten bij naleving",
       );
     } else if (bestAlternative.action === Recommendation.REFER_TO_ASSISTANCE) {
       suggestedSteps.push(
-        'Doorverwijzing naar schuldhulpverlening',
-        'Schuld on-hold tot traject loopt',
-        'Coördineer met andere schuldeisers'
+        "Doorverwijzing naar schuldhulpverlening",
+        "Schuld on-hold tot traject loopt",
+        "Coördineer met andere schuldeisers",
       );
     }
 
@@ -340,7 +343,10 @@ export class CostCalculator {
   /**
    * Calculate days overdue
    */
-  private calculateDaysOverdue(dueDate: string): number {
+  private calculateDaysOverdue(dueDate?: string): number {
+    if (!dueDate) {
+      return 30; // Default to 30 days if no due date provided
+    }
     const due = new Date(dueDate);
     const now = new Date();
     const diff = now.getTime() - due.getTime();
@@ -368,7 +374,7 @@ export class CostCalculator {
       debt.amount,
       directCosts,
       successFactors.combinedProbability,
-      societalCosts
+      societalCosts,
     );
 
     // Generate recommendation
@@ -378,15 +384,20 @@ export class CostCalculator {
       successFactors.combinedProbability,
       societalCosts,
       riskScore,
-      alternatives
+      alternatives,
     );
 
     // Calculate savings
-    const bestAlternative = alternatives.find((a) => a.action === recommendation.action)!;
+    const bestAlternative = alternatives.find(
+      (a) => a.action === recommendation.action,
+    )!;
     const estimatedSavings = {
       direct: directCosts.total - bestAlternative.costs,
       societal: bestAlternative.societalBenefit,
-      total: directCosts.total - bestAlternative.costs + bestAlternative.societalBenefit,
+      total:
+        directCosts.total -
+        bestAlternative.costs +
+        bestAlternative.societalBenefit,
     };
 
     return {

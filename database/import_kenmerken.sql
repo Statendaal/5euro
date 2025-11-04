@@ -1,0 +1,1 @@
+\copy cbs_kenmerken(jaar, gemeentecode, gemeentenaam, groep, schuldenaren, kenmerken_cat, aantal, percentage, ondergrens_aantal, bovengrens_aantal, ondergrens_percentage, bovengrens_percentage, tooltip, thema, hoofdthema, label, niveau, voetnoot) FROM '../cbs-data/Kenmerken_fixed.csv' WITH (FORMAT csv, DELIMITER ';', HEADER true, QUOTE '"', NULL '');

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { analyzeDebt, getMockDebts } from '../api';
 import { DebtAnalysisRequest, DebtAnalysisResponse, DebtType, IncomeSource, debtTypeLabels, incomeSourceLabels } from '../types';
 import { Loader2, Sparkles } from 'lucide-react';
+import { getRandomRealisticCase } from '../data/realisticCases';
 
 interface DebtAnalysisFormProps {
   onAnalysisComplete: (result: DebtAnalysisResponse) => void;
@@ -9,25 +10,7 @@ interface DebtAnalysisFormProps {
 
 export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) {
   const [loading, setLoading] = useState(false);
-  const [formData, setFormData] = useState<DebtAnalysisRequest>({
-    debt: {
-      amount: 8.50,
-      type: DebtType.CAK_EIGEN_BIJDRAGE,
-      originDate: '2024-09-15',
-      dueDate: '2024-09-30',
-    },
-    citizen: {
-      bsn: '123456789',
-      income: 1450,
-      incomeSource: IncomeSource.BENEFIT_SOCIAL,
-      otherDebtsCount: 3,
-      inDebtAssistance: false,
-      paymentHistory: [
-        { date: '2024-08-15', amount: 8.50, daysLate: 12 },
-        { date: '2024-07-15', amount: 8.50, daysLate: 8 },
-      ],
-    },
-  });
+  const [formData, setFormData] = useState<DebtAnalysisRequest>(getRandomRealisticCase());
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,18 +27,10 @@ export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) 
     }
   };
 
-  const loadMockExample = async () => {
-    setLoading(true);
-    try {
-      const mockDebts = await getMockDebts(1);
-      if (mockDebts.length > 0) {
-        setFormData(mockDebts[0]);
-      }
-    } catch (error) {
-      console.error('Failed to load mock data:', error);
-    } finally {
-      setLoading(false);
-    }
+  const loadMockExample = () => {
+    // Load a random realistic case from our 10 CBS-based examples
+    const randomCase = getRandomRealisticCase();
+    setFormData(randomCase);
   };
 
   return (
