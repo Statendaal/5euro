@@ -514,14 +514,584 @@ In gesprekken over incasso-problematiek zien we consistent terugkerende argument
 
 ---
 
+## 🤝 Rol Statendaal: Onafhankelijke Implementatiepartner
+
+### Waarom Externe Begeleiding Noodzakelijk Is
+
+**Het Kernprobleem:**
+Alle 5 deelnemende organisaties hebben decennialang het huidige systeem gebruikt en verdedigd. Er bestaat een risico op:
+- **Institutionele blindheid:** "Zo doen we het nu eenmaal"
+- **Belangenverstrengeling:** Interne incasso-afdelingen, bestaande leveranciers
+- **Gebrek aan urgentie:** Dagelijkse operatie gaat voor transformatie
+- **Politieke gevoeligheid:** Wie neemt verantwoordelijkheid bij tegenslag?
+
+**De Oplossing: Neutrale Derde Partij**
+
+Een onafhankelijke partner met publieke sector expertise die:
+1. Geen belang heeft bij continuering huidige systeem
+2. Wel belang heeft bij succesvolle transformatie
+3. Ervaring heeft met complexe multi-stakeholder trajecten
+4. Begrijpt hoe publieke sector werkt (geen Silicon Valley startup)
+
+---
+
+### Statendaal Profiel
+
+**Statendaal** is een club van adviseurs en managers gespecialiseerd in publieke sector transformaties.
+
+**Kernexpertise:**
+- Procesherinrichting complexe publieke dienstverlening
+- Multi-stakeholder governance (ministeries, ZBO's, uitvoeringsorganisaties)
+- Data-gedreven beleidsimplementatie
+- Change management publieke sector
+- Politiek-bestuurlijke sensitiviteit
+
+**Relevante Ervaring:**
+- Implementatie trajecten bij ministeries en uitvoeringsorganisaties
+- Complexe IT/data transformaties publieke sector
+- Programma management met meerdere RvB-en
+- Communicatie richting Tweede Kamer en media
+
+**Onafhankelijkheid:**
+- Geen commerciële banden met incassobureaus
+- Geen leveranciersbelang bij platform keuzes
+- Verdienmodel: succesvolle implementatie, niet continuering probleem
+
+---
+
+### Statendaal Taskforce: Team Samenstelling
+
+Voor deze pilot stelt Statendaal een **dedicated taskforce** samen met specifieke rollen en verantwoordelijkheden:
+
+**1. Programmamanager (Pilot Lead)**
+- **Rol:** Overall verantwoordelijk voor pilot succes
+- **Profiel:** Senior met 15+ jaar ervaring publieke sector transformaties
+- **Verantwoordelijkheden:**
+  - Dagelijkse aansturing werkgroep
+  - Escalatie management naar stuurgroep
+  - Budget en planning bewaking
+  - Stakeholder management (5 organisaties + externen)
+  - Rapportage aan Programmadirecteur VR
+- **Inzet:** 0,6-0,8 FTE (afhankelijk van fase)
+
+**2. Senior Adviseur Governance & Strategie**
+- **Rol:** Governance inrichting en bestuurlijke advisering
+- **Profiel:** Ervaring met multi-stakeholder governance, ZBO-kennis
+- **Verantwoordelijkheden:**
+  - Ontwerp governance charter
+  - Faciliteren stuurgroep besluitvorming
+  - Politiek-bestuurlijke advisering
+  - Tweede Kamer communicatie voorbereiden
+  - Contract- en juridische vraagstukken
+- **Inzet:** 0,2-0,4 FTE
+
+**3. Data & Evaluatie Specialist**
+- **Rol:** Kwaliteitsbewaking ML model en onafhankelijke meting
+- **Profiel:** Data scientist met publieke sector ervaring, AVG kennis
+- **Verantwoordelijkheden:**
+  - ML model performance monitoring (bias, accuracy, fairness)
+  - CBS/BRP/UWV data integratie kwaliteitstoets
+  - Onafhankelijke effect meting pilot (interventie vs controle)
+  - Statistische analyse en rapportage
+  - AVG compliance bewaking
+- **Inzet:** 0,4 FTE (fase 2-3)
+
+**4. Change Manager**
+- **Rol:** Adoptie en verandering bij 5 organisaties
+- **Profiel:** Change management publieke sector, training ervaring
+- **Verantwoordelijkheden:**
+  - Stakeholder analyse en weerstandsmanagement
+  - Training programma CAK medewerkers (20 FTE)
+  - Interne communicatie bij 5 organisaties
+  - User acceptance testing faciliteren
+  - Lessons learned verzamelen
+- **Inzet:** 0,3 FTE
+
+**5. Communicatie Adviseur**
+- **Rol:** Media, politiek en externe communicatie
+- **Profiel:** Communicatie met Tweede Kamer ervaring, crisis communicatie
+- **Verantwoordelijkheden:**
+  - Media strategie en persberichten
+  - Tweede Kamer briefings voorbereiden
+  - Website/dashboard voor transparantie
+  - Stakeholder communicatie (incassobureaus, burgerorganisaties)
+  - Reputatie management
+- **Inzet:** 0,2 FTE
+
+**6. Privacy & Security Officer (Adviseur)**
+- **Rol:** AVG compliance en security bewaking
+- **Profiel:** AVG/GDPR specialist, ISO 27001 kennis
+- **Verantwoordelijkheden:**
+  - Privacy Impact Assessment (DPIA) opstellen
+  - Bewerkersovereenkomsten tussen 5 organisaties
+  - Security audits aansturen (penetration testing)
+  - Incident response protocol
+  - Audit trail monitoring
+- **Inzet:** 0,1-0,2 FTE (adviserende rol)
+
+**Totale Taskforce Inzet:**
+- Fase 1 (voorbereiding): ~1,5 FTE totaal
+- Fase 2 (uitvoering): ~2,0 FTE totaal  
+- Fase 3 (evaluatie): ~1,2 FTE totaal
+- Fase 4 (schaling): ~1,0 FTE totaal
+
+**Werkwijze:**
+- Dedicated Slack/Teams workspace voor directe communicatie
+- Wekelijkse interne alignment (taskforce)
+- Maandelijkse retrospectives (wat werkt, wat niet)
+- Transparante documentatie (alle deliverables gedeeld met stuurgroep)
+
+---
+
+### Concrete Rol Statendaal in Pilot
+
+**Fase 1: Voorbereiding (Maand 1-2)**
+
+**Programmamanagement:**
+- Fungeren als onafhankelijk programmamanager pilot
+- Faciliteren stuurgroep meetings (agenda, notulen, actielijsten)
+- Bewaken planning en budget
+- Escaleren bij vertraging of scope creep
+
+**Governance Inrichting:**
+- Ontwerpen governance charter met mandaten en escalatielijnen
+- Faciliteren ondertekening tussen 5 organisaties
+- Inrichten besluitvormingsprocessen (go/no-go gates)
+- Regelen onafhankelijke audits (privacy, security)
+
+**Stakeholder Management:**
+- Gesprekken met incassobureaus (win-win propositie)
+- Afstemming met NVVK, Nibud, VNG (adviesraad)
+- Media strategie en communicatieplan
+- Interne communicatie bij 5 organisaties
+
+**Technische Regie:**
+- RFP proces platform vendor (indien nodig)
+- Technical due diligence platform/ML model
+- Kwaliteitstoets data connecties
+- Security en privacy audits aansturen
+
+**Deliverable:** 
+- Pilot-ready organisatie met werkende governance, budget, planning en stakeholder alignment
+
+**Inzet:** 0,8 FTE programmamanager + 0,2 FTE senior adviseur  
+**Kosten:** €80K van €100K fase budget
+
+---
+
+**Fase 2: Pilot Uitvoering (Maand 3-6)**
+
+**Operationele Sturing:**
+- Dagelijkse aansturing werkgroep (product owners 5 organisaties + tech lead)
+- Wekelijkse sprint reviews en planning
+- Maandelijkse KPI rapportage stuurgroep
+- Issue en risico management
+
+**Kwaliteitsbewaking:**
+- Monitoren pilot protocol naleving (5K intervention vs 5K control)
+- Data kwaliteit checks (CBS, BRP, UWV feeds)
+- ML model performance monitoring (bias, accuracy, fairness)
+- User acceptance testing met CAK medewerkers
+
+**Onafhankelijke Meting:**
+- Contracteren externe partij voor effect meting
+- Blinde analyse interventie vs controle groep
+- Kwalitatieve feedback verzameling (burgers, medewerkers, stakeholders)
+- Financiële audit ROI claims
+
+**Escalatie Management:**
+- Signaleren knelpunten vroeg (technisch, organisatorisch, politiek)
+- Faciliteren oplossingsrichtingen via stuurgroep
+- Bijsturen scope/planning indien nodig
+- Voorkomen dat pilot "dood bloeden" door interne weerstand
+
+**Transparantie:**
+- Maandelijkse publieksversie voortgangsrapportage (voor Tweede Kamer)
+- Dashboard met real-time KPIs (kosten, opbrengst, klachten)
+- Incident log met root cause analyses
+- Lessons learned documentatie
+
+**Deliverable:**
+- Betrouwbare, onafhankelijk geverifieerde pilot resultaten
+
+**Inzet:** 0,6 FTE programmamanager + 0,4 FTE data/evaluatie specialist  
+**Kosten:** €120K van €300K fase budget
+
+---
+
+**Fase 3: Evaluatie & Besluitvorming (Maand 7)**
+
+**Rapportage:**
+- Opstellen eindrapport met executive summary
+- Statistische analyse met onafhankelijke verificatie
+- Business case verfijning voor schaling
+- Risicoanalyse actualiseren
+
+**Aanbevelingen:**
+- Go/no-go advies met onderbouwing
+- Lessons learned en verbeterpunten
+- Schalingsaanpak per organisatie (maatwerk)
+- Contractstrategie incassobureaus
+
+**Besluitvormingsfacilitatie:**
+- Presentaties bij 5 Raden van Bestuur
+- Faciliteren stuurgroep besluitvorming
+- Voorbereiding Tweede Kamer rapportage
+- Media strategie bij publicatie resultaten
+
+**Deliverable:**
+- Besluit over schaling met breed gedragen onderbouwing
+
+**Inzet:** 0,6 FTE programmamanager + 0,2 FTE senior adviseur  
+**Kosten:** €40K van €100K fase budget
+
+---
+
+**Fase 4: Schaling (Maand 8-18, indien Go)**
+
+**Uitrol Orchestratie:**
+- Sequencing 5 organisaties (CAK → SVB → Belastingdienst → DG Toeslagen → UWV)
+- Per organisatie: voorbereiding, soft launch, full deployment (3 maanden cyclus)
+- Lessons learned van eerdere uitrol toepassen op volgende
+- Centrale helpdesk voor 5 organisaties
+
+**Governance Continuering:**
+- Maandelijkse CIO/CFO overleg faciliteren
+- Kwartaal review met RvB-en
+- Jaarlijkse evaluatie Tweede Kamer voorbereiden
+- Budget en planning bewaken
+
+**Platform Optimalisatie:**
+- Continuous improvement ML model (accuratesse verhogen)
+- Feature requests prioriteren en implementeren
+- Performance optimalisatie (schaling naar 400K cases/jaar)
+- Security updates en compliance
+
+**Branche Transformatie:**
+- Outcome-based contracten ontwerpen met incassobureaus
+- Certificering "Smart Collection Partner" opzetten
+- Branche-convenanten faciliteren (BOI, KBvG)
+- Lobby wetgeving proportionaliteit (via VWS/MinFin)
+
+**Deliverable:**
+- 5 organisaties operationeel met €113M/jaar besparing gerealiseerd
+
+**Inzet:** 0,4 FTE programmamanager + 0,2 FTE per organisatie (rollout support)  
+**Kosten:** €200K (gedekt uit besparingen organisaties)
+
+---
+
+### Waarom Statendaal Geschikt Is
+
+**1. Onafhankelijkheid**
+- Geen belang bij status quo
+- Geen leveranciersbanden
+- Reputatie gekoppeld aan succes transformatie
+
+**2. Publieke Sector DNA**
+- Begrijpen van bestuurlijke verhoudingen (RvB, bewindspersonen, Tweede Kamer)
+- Ervaring met politieke gevoeligheid (toeslagenaffaire context)
+- Kennis van AVG, Awb, BW juridische kaders
+- Netwerk binnen overheid
+
+**3. Multi-Stakeholder Expertise**
+- Ervaring met 5+ organisaties tegelijk
+- Governance tussen ZBO's en ministeries
+- Belangenmanagement (incassobureaus, burgerorganisaties, etc.)
+- Consensus building zonder verwaterde besluiten
+
+**4. Data & Technologie Vaardigheid**
+- Begrip ML/AI (niet alleen "het systeem doet iets")
+- Data governance en privacy (AVG compliance)
+- Platform architectuur (APIs, integraties)
+- DevOps en agile (sprints, KPIs, dashboards)
+
+**5. Change Management**
+- Omgaan met weerstand (binnen organisaties én externe stakeholders)
+- Training en adoptie begeleiden
+- Communicatie naar media en politiek
+- Van pilot naar reguliere operatie
+
+---
+
+### Alternatieve Scenario's
+
+**Scenario A: Interne Programmamanager (één van de 5 organisaties)**
+
+**Risico's:**
+- Belangenverstrengeling: eigen organisatie prioriteren
+- Interne politiek: lastig om andere RvB-en aan te sturen
+- Capaciteit: dagelijkse operatie gaat voor pilot
+- Objectiviteit: moeilijk kritisch op eigen organisatie
+
+**Conclusie:** Minder geschikt voor multi-stakeholder pilot
+
+---
+
+**Scenario B: Big Four Consultancy (Deloitte, PwC, etc.)**
+
+**Risico's:**
+- Commerciële belangen: scope creep voor omzet
+- Standaard playbooks: niet specifiek voor publieke sector
+- Junior consultants: hoge kosten, beperkte ervaring
+- "Powerpoints schrijven": minder implementatie focus
+
+**Voordeel:** Grote capaciteit en internationale expertise
+
+**Conclusie:** Geschikt voor grote schaling (fase 4), minder voor agile pilot
+
+---
+
+**Scenario C: Tech Startup**
+
+**Risico's:**
+- Gebrek aan bestuurlijke sensitiviteit
+- "Move fast break things" past niet bij publieke sector
+- Geen ervaring met Tweede Kamer verantwoording
+- Technologie-first, mensen-second
+
+**Voordeel:** Snelheid en innovatie
+
+**Conclusie:** Geschikt als platform vendor, niet als programmamanager
+
+---
+
+**Scenario D: Statendaal**
+
+**Voordelen:**
+- Onafhankelijk én publieke sector expertise
+- Multi-stakeholder governance ervaring
+- Politiek-bestuurlijke sensitiviteit
+- Data/tech vaardig zonder tech-hype
+- Change management én implementatie
+
+**Nadelen:**
+- Kleinere organisatie (capaciteit beperkt bij scaling)
+- Minder internationale expertise
+
+**Conclusie:** Ideaal voor pilot (fase 1-3), met Big Four als optie voor schaling (fase 4)
+
+---
+
+### Investering Statendaal Taskforce
+
+**Pilot Fase (6 maanden):**
+- Fase 1: €80K (programmamanagement + governance)
+- Fase 2: €120K (operationele sturing + onafhankelijke meting)
+- Fase 3: €40K (evaluatie + besluitvorming)
+- **Totaal: €240K van €500K pilot budget (48%)**
+
+**Schaling Fase (12 maanden, indien go):**
+- €200K (uitrol orchestratie 5 organisaties)
+
+**ROI:**
+- Pilot investering €240K → €2,1M pilot return = **8,8× ROI**
+- Bij schaling: €440K totaal → €113M/jaar = **257× ROI**
+
+**Wat u koopt met Statendaal:**
+- Onafhankelijke ogen die niet verblind zijn door decennia status quo
+- Programmamanager die durft te escaleren naar RvB bij knelpunten
+- Expertise die politieke mijnenvelden navigeert (toeslagenaffaire context)
+- Kwaliteitswaarborg dat pilot resultaten betrouwbaar zijn
+- Brugfunctie tussen 5 organisaties die normaal niet samenwerken
+
+**Wat u niet koopt:**
+- "Nog een rapport dat in de kast belandt"
+- Verkapte sales pitch voor dure software
+- Consultants die jargon gebruiken zonder implementatie
+- Ja-knikkers die status quo niet durven uitdagen
+
+---
+
+## 💰 Financiering: WAU-Gelden (Werken Aan Uitvoering)
+
+### WAU Programma Context
+
+Het programma **Werken Aan Uitvoering** (Ministerie van Sociale Zaken en Werkgelegenheid) is opgericht na de toeslagenaffaire om uitvoeringsorganisaties te ondersteunen bij verbetering van dienstverlening en rechtsbescherming.
+
+**WAU Doelstellingen:**
+1. Verbeteren uitvoeringspraktijk publieke dienstverlening
+2. Versterken rechtsbescherming burgers
+3. Innovatie in data-gedreven dienstverlening
+4. Samenwerking tussen uitvoeringsorganisaties
+
+**Budget:** Meerjaren programma met substantiële middelen voor pilots en innovatietrajecten
+
+---
+
+### Smart Collection Pilot Past Perfect bij WAU
+
+**Match met WAU Doelstelling 1: Verbeteren Uitvoeringspraktijk**
+- Deze pilot verbetert direct de uitvoeringspraktijk van incasso bij 5 grote uitvoeringsorganisaties
+- Van procedurele automatisering naar mensgerichte maatwerk aanpak
+- Bewezen kostenbesparing 80% (van €200 naar €40 per zaak)
+- Opbrengst verbetering 3× (van 15% naar 45%)
+
+**Match met WAU Doelstelling 2: Versterken Rechtsbescherming**
+- Proportionaliteitstoets vooraf (artikel 6:2 BW inspanningsverplichting)
+- Automatische screening kwetsbare groepen (14 CBS patronen)
+- Recht op menselijke beoordeling (AVG artikel 22)
+- Transparante AI met uitlegbare beslissingen (XAI)
+- Preventie schuldenspiraal voor 270.000 huishoudens
+
+**Match met WAU Doelstelling 3: Innovatie Data-Gedreven Dienstverlening**
+- ML Model V2 met 89,49% accuratesse
+- CBS/BRP/UWV data integratie voor betaalvermogensbeoordeling
+- Real-time monitoring en evaluatie (dashboard met KPIs)
+- Schaalbaar naar alle publieke schuldeisers (gemeenten, zorgverzekeraars)
+
+**Match met WAU Doelstelling 4: Samenwerking Uitvoeringsorganisaties**
+- 5 organisaties werken samen (Belastingdienst, SVB, CAK, UWV, DG Toeslagen)
+- Gedeelde data infrastructuur en ML model
+- Gezamenlijke governance en lessons learned
+- Potentie voor uitbreiding naar 50+ organisaties
+
+---
+
+### WAU Subsidie Aanvraag: Smart Collection Pilot
+
+**Aangevraagd Bedrag:** €500.000
+
+**Periode:** 6 maanden (maart 2025 - augustus 2025)
+
+**Aanvragers:** 
+- Lead: CAK (als pilot organisatie)
+- Partners: Belastingdienst, SVB, DG Toeslagen, UWV
+- Uitvoering: Statendaal (onafhankelijke implementatiepartner)
+- Verantwoordelijk: Programmadirecteur Versterking Rechtsbescherming (toezicht)
+
+**Kostenverdeling:**
+
+| Categorie | Bedrag | Toelichting |
+|-----------|--------|-------------|
+| **1. Programmamanagement** | €240K | Statendaal taskforce (6 FTE) |
+| **2. Platform & Techniek** | €150K | ML model integratie, API connecties, hosting |
+| **3. Data Integratie** | €50K | CBS/BRP/UWV koppelingen, data cleaning |
+| **4. Change Management** | €30K | Training 20 CAK medewerkers, interne communicatie |
+| **5. Onafhankelijke Evaluatie** | €30K | Externe partij voor effect meting |
+| **Totaal** | **€500K** | |
+
+**Bijdrage Organisaties:**
+Hoewel WAU-gelden de investering dekken, dragen organisaties bij in-kind:
+- CAK: 20 FTE medewerkers beschikbaar voor pilot (€400K loonkosten)
+- 4 andere organisaties: elk 0,2 FTE product owner (€160K loonkosten totaal)
+- Totale publieke investering: €500K cash + €560K in-kind = **€1.06M**
+
+**Return on Investment WAU-geld:**
+- WAU investering: €500K
+- Pilot return (6 maanden, 10K cases): €2,1M
+- ROI: **4,2× in 6 maanden**
+- Bij schaling (jaar 2): €113M/jaar besparingen
+- ROI bij schaling: **226× per jaar**
+
+---
+
+### Motivatie WAU Subsidie
+
+**Waarom is dit een WAU-subsidie waard?**
+
+**1. Systemisch Probleem Oplossen**
+- Niet een organisatie, maar collectief probleem 5 uitvoeringsorganisaties
+- 721.290 huishoudens geraakt, €8,2 miljard maatschappelijke schade
+- Toeslagenaffaire heeft urgentie aangetoond
+
+**2. Hoge Impact, Lage Kosten**
+- €500K investering → €113M/jaar structurele besparing
+- Schaalbaar naar gemeenten (€1,5 miljard potentieel)
+- Preventie 270.000 schuldenspiralen per jaar
+
+**3. Innovatie met Beproefd Concept**
+- ML Model V2 operationeel met 89,49% accuratesse
+- CBS data beschikbaar en getest
+- Proof of concept gedemonstreerd
+- Geen "onderzoek", maar implementatie
+
+**4. Duurzame Transformatie**
+- Na pilot: platform beschikbaar voor 50+ organisaties
+- Open source optie: andere overheden kunnen meeliften
+- Branche transformatie: outcome-based contracten incassobureaus
+- Wetgeving impulse: proportionaliteit wordt norm
+
+**5. Transparantie & Verantwoording**
+- Maandelijkse rapportage aan Programmadirecteur VR
+- Onafhankelijke evaluatie met controle groep
+- Dashboard met real-time KPIs publiek beschikbaar
+- Rapportage aan Tweede Kamer na 6 maanden
+
+---
+
+### Processtappen WAU Subsidie
+
+**1. Formele Aanvraag Indienen (Week 1-2)**
+- Lead: CAK dient aan namens 5 organisaties
+- Document: WAU subsidieformulier met deze business case
+- Bijlagen: Governance charter, privacy assessment, technische architectuur
+- Ondertekening: 5 Raden van Bestuur + Programmadirecteur VR
+
+**2. Beoordeling WAU Programmabureau (Week 3-6)**
+- Toetsing aan WAU criteria (fit is excellent)
+- Technische review door WAU adviseurs
+- Budget beschikbaarheid check
+- Evt. hoorzitting / presentatie
+
+**3. Besluit & Toekenning (Week 7-8)**
+- Subsidie beschikking van Ministerie SZW
+- Contractering Statendaal als uitvoerder
+- Governance formeel geïnstalleerd
+- Budget beschikbaar
+
+**4. Start Pilot (Week 9 = Maart 2025)**
+- Fase 1 voorbereiding (2 maanden)
+- Fase 2 uitvoering (4 maanden)
+- Fase 3 evaluatie (1 maand)
+
+**5. Verantwoording (Maand 7-8)**
+- Eindrapport aan WAU programmabureau
+- Financiële verantwoording
+- Go/no-go besluit schaling
+- Evt. vervolgaanvraag WAU voor schaling (€875K)
+
+---
+
+### Alternatieve Financiering (indien WAU niet beschikbaar)
+
+**Optie A: Organisaties betalen zelf**
+- €100K per organisatie (5× €100K = €500K)
+- Voordeel: Directe commitment en ownership
+- Nadeel: Budgetten mogelijk niet beschikbaar in Q1 2025
+
+**Optie B: Mix WAU + Eigen Bijdrage**
+- WAU: €300K (programmamanagement + evaluatie)
+- Organisaties: €200K (techniek + data integratie)
+- Voordeel: Gedeeld risico, grotere commitment
+- Nadeel: Complexere financiering
+
+**Optie C: MinFin Innovatiebudget**
+- Belastingdienst vraagt aan bij MinFin directie Toeslagen
+- Narratief: herstel vertrouwen na toeslagenaffaire
+- Voordeel: Politieke urgentie toeslagen context
+- Nadeel: Mogelijk politiek gevoelig
+
+**Aanbeveling:** 
+WAU is ideale match (doelstellingen, timing, governance). Bij niet-beschikbaar: Optie B als tweede keus.
+
+---
+
 ## 🏛️ Governance Structuur
 
 ### Stuurgroep (Strategisch Niveau)
 **Samenstelling:**
 - Voorzitter: Programmadirecteur Versterking Rechtsbescherming
 - Leden: 1 RvB lid per organisatie (5 personen)
-- Secretaris: Programmamanager Smart Collection
+- Secretaris: Programmamanager Smart Collection (Statendaal)
 - Adviseurs: Privacy officer, Chief Data Officer, Juridisch adviseur
+
+**Rol Statendaal:**
+- Onafhankelijk secretaris en procesbegeleider
+- Voorbereiding agenda en beslispunten
+- Notulen en actielijstbeheer
+- Neutrale facilitering discussie (geen stemrecht)
+- Escalatie naar voorzitter bij impasses
 
 **Verantwoordelijkheden:**
 - Go/no-go besluiten bij elke fase
@@ -532,16 +1102,31 @@ In gesprekken over incasso-problematiek zien we consistent terugkerende argument
 
 **Frequentie:** Maandelijks (2 uur) + ad-hoc bij escalaties
 
+**Besluitvorming:**
+- Consensus bij voorkeur
+- Bij niet-consensus: stemming (1 stem per organisatie)
+- Bij staking: voorzitter (Programmadirecteur) doorslaggevend
+- Statendaal heeft geen stemrecht maar wel spreekrecht
+
 ---
 
 ### Werkgroep (Operationeel Niveau)
 **Samenstelling:**
-- Programmamanager (voorzitter)
-- Product owner per organisatie (5 personen)
-- Tech lead (platform development)
-- Data scientist (ML model)
-- Privacy/security officer
-- Change manager
+- Programmamanager (voorzitter) - **Statendaal**
+- Product owner per organisatie (5 personen) - **5 organisaties**
+- Tech lead (platform development) - **Platform vendor of intern**
+- Data scientist (ML model) - **Technische partner**
+- Privacy/security officer - **CAK (lead organisatie)**
+- Change manager - **Statendaal**
+- Evaluatie specialist - **Statendaal (fase 2-3)**
+
+**Rol Statendaal:**
+- Dagelijkse operationele aansturing
+- Sprint planning en voortgangsbewaking
+- Risico en issue management
+- KPI monitoring en rapportage
+- Kwaliteitsbewaking (data, ML model, proces)
+- Escalatie naar stuurgroep bij knelpunten
 
 **Verantwoordelijkheden:**
 - Dagelijkse uitvoering
@@ -550,7 +1135,7 @@ In gesprekken over incasso-problematiek zien we consistent terugkerende argument
 - KPI monitoring
 - Stakeholder communicatie operationeel
 
-**Frequentie:** Wekelijks (1 uur) + daily standups
+**Frequentie:** Wekelijks (1 uur) + daily standups (15 min)
 
 ---
 
@@ -574,16 +1159,23 @@ In gesprekken over incasso-problematiek zien we consistent terugkerende argument
 
 ## ⚖️ Beslispunten voor dit Overleg
 
-### Beslispunt 1: Pilot Go/No-Go
+### Beslispunt 1: Pilot Go/No-Go + WAU Subsidie
 **Vraag:** Geven alle 5 organisaties mandaat voor 6-maanden pilot met CAK als lead?
 
 **Commitment vereist:**
-- ✅ Budget contributie: €100K per organisatie (totaal €500K)
+- ✅ Ondertekening WAU subsidieaanvraag (€500K) namens 5 organisaties
+- ✅ In-kind bijdrage: CAK 20 FTE + anderen elk 0,2 FTE product owner
 - ✅ Data sharing akkoord: CBS, BRP, UWV data beschikbaar stellen
-- ✅ Governance participatie: maandelijks stuurgroep deelname
+- ✅ Governance participatie: maandelijks stuurgroep deelname (1 RvB lid per org)
 - ✅ Schaling intentie: bij succes pilot, commitment voor fase 4
+- ✅ Statendaal taskforce als onafhankelijke implementatiepartner
 
-**Timeline:** Besluit vandaag → Start pilot over 2 maanden (maart 2025)
+**Financiering:**
+- Primair: WAU subsidie €500K (Ministerie SZW)
+- Backup: Organisaties betalen zelf €100K elk (indien WAU niet beschikbaar)
+
+**Timeline:** 
+- Besluit vandaag → WAU aanvraag week 1 → Besluit week 8 → Start pilot maart 2025
 
 ---
 
