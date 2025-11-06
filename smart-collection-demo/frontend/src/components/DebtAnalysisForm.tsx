@@ -71,7 +71,7 @@ export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) 
                     ...formData,
                     debt: { ...formData.debt, amount: parseFloat(e.target.value) }
                   })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -86,7 +86,7 @@ export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) 
                     ...formData,
                     debt: { ...formData.debt, type: e.target.value as DebtType }
                   })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   required
                 >
                   {Object.entries(debtTypeLabels).map(([value, label]) => (
@@ -106,7 +106,7 @@ export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) 
                     ...formData,
                     debt: { ...formData.debt, originDate: e.target.value }
                   })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -122,7 +122,7 @@ export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) 
                     ...formData,
                     debt: { ...formData.debt, dueDate: e.target.value }
                   })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -144,7 +144,7 @@ export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) 
                     ...formData,
                     citizen: { ...formData.citizen, bsn: e.target.value }
                   })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="123456789"
                   required
                 />
@@ -161,7 +161,7 @@ export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) 
                     ...formData,
                     citizen: { ...formData.citizen, income: parseFloat(e.target.value) }
                   })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   required
                 />
               </div>
@@ -176,7 +176,7 @@ export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) 
                     ...formData,
                     citizen: { ...formData.citizen, incomeSource: e.target.value as IncomeSource }
                   })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   required
                 >
                   {Object.entries(incomeSourceLabels).map(([value, label]) => (
@@ -197,7 +197,7 @@ export function DebtAnalysisForm({ onAnalysisComplete }: DebtAnalysisFormProps) 
                     ...formData,
                     citizen: { ...formData.citizen, otherDebtsCount: parseInt(e.target.value) }
                   })}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   required
                 />
               </div>
