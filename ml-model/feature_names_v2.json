@@ -1,0 +1,22 @@
+[
+  "debt_amount",
+  "monthly_income",
+  "has_social_benefits",
+  "is_unemployed",
+  "has_flex_work",
+  "is_zzp",
+  "is_single_parent",
+  "has_children",
+  "num_children",
+  "has_jeugdzorg",
+  "debt_to_income_ratio",
+  "other_debts_count",
+  "income_risk",
+  "unemployment_risk",
+  "social_benefit_risk",
+  "age_jong",
+  "age_oud",
+  "benefit_bijstand",
+  "benefit_ww",
+  "benefit_ao"
+]

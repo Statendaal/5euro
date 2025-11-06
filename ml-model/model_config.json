@@ -1,0 +1,21 @@
+{
+  "feature_columns": [
+    "debt_amount",
+    "monthly_income",
+    "has_social_benefits",
+    "is_unemployed",
+    "debt_to_income_ratio",
+    "income_risk",
+    "unemployment_risk",
+    "social_benefit_risk"
+  ],
+  "classes": [
+    "FORGIVE",
+    "PAYMENT_PLAN",
+    "REFER_TO_ASSISTANCE",
+    "REMINDER"
+  ],
+  "accuracy": 1.0,
+  "cv_mean": 0.9979955267968776,
+  "cv_std": 0.0008933631399067765
+}

@@ -1,0 +1,74 @@
+{
+  "version": "2.0",
+  "training_date": "2025-11-03T21:41:32.256780",
+  "training_samples": 4188,
+  "test_samples": 1047,
+  "test_accuracy": 0.894937917860554,
+  "cv_mean": 0.8923105875912096,
+  "cv_std": 0.013894950312046976,
+  "features": [
+    "debt_amount",
+    "monthly_income",
+    "has_social_benefits",
+    "is_unemployed",
+    "has_flex_work",
+    "is_zzp",
+    "is_single_parent",
+    "has_children",
+    "num_children",
+    "has_jeugdzorg",
+    "debt_to_income_ratio",
+    "other_debts_count",
+    "income_risk",
+    "unemployment_risk",
+    "social_benefit_risk",
+    "age_jong",
+    "age_oud",
+    "benefit_bijstand",
+    "benefit_ww",
+    "benefit_ao"
+  ],
+  "n_features": 20,
+  "classes": [
+    "FORGIVE",
+    "PAYMENT_PLAN",
+    "REFER_TO_ASSISTANCE",
+    "REMINDER"
+  ],
+  "model_params": {
+    "n_estimators": 200,
+    "max_depth": 15,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2
+  },
+  "improvements_v2": [
+    "Added age categories (jong/mid/oud)",
+    "Added benefit types (bijstand/ww/ao)",
+    "Added household features (single_parent, children, jeugdzorg)",
+    "Added work details (flex, zzp)",
+    "More nuanced success probability calculation",
+    "Based on 14 CBS patterns (was 3 in V1)"
+  ],
+  "feature_importance_top5": [
+    {
+      "feature": "other_debts_count",
+      "importance": 0.19211684355836506
+    },
+    {
+      "feature": "debt_amount",
+      "importance": 0.17466088398166563
+    },
+    {
+      "feature": "debt_to_income_ratio",
+      "importance": 0.1438776998275385
+    },
+    {
+      "feature": "has_social_benefits",
+      "importance": 0.1194938714393143
+    },
+    {
+      "feature": "monthly_income",
+      "importance": 0.09861105490789812
+    }
+  ]
+}
