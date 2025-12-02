@@ -3,7 +3,7 @@ import { Loader2, Users, TrendingDown, AlertCircle, MapPin, Briefcase, Heart } f
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { mockCBSDashboardData } from '../data/mockCBSData';
 
-interface CBSDashboardData {
+export interface CBSDashboardData {
   overview: Array<{
     thema: string;
     totalRecords: number;
@@ -40,7 +40,6 @@ const COLORS = ['#3b82f6', '#ef4444', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899'
 export function CBSDashboard() {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState<CBSDashboardData | null>(null);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     loadCBSData();
@@ -48,13 +47,18 @@ export function CBSDashboard() {
 
   const loadCBSData = async () => {
     setLoading(true);
-    setError(null);
     try {
-      // Try to fetch from backend first
-      const response = await fetch('http://localhost:3001/api/v1/cbs/dashboard?jaar=2024-01');
-      if (!response.ok) throw new Error('Failed to fetch CBS data');
-      const result = await response.json();
-      setData(result);
+      if ((import.meta as any).env?.VITE_USE_MOCK_DATA === 'true') {
+        // Use mock data for GitHub Pages
+        await new Promise(resolve => setTimeout(resolve, 500)); // Simulate network delay
+        setData(mockCBSDashboardData);
+      } else {
+        // Try to fetch from backend first
+        const response = await fetch('http://localhost:3001/api/v1/cbs/dashboard?jaar=2024-01');
+        if (!response.ok) throw new Error('Failed to fetch CBS data');
+        const result = await response.json();
+        setData(result);
+      }
     } catch (error) {
       // Fallback to mock data for GitHub Pages or when backend is not available
       console.log('Backend niet beschikbaar, gebruik mock CBS data');
