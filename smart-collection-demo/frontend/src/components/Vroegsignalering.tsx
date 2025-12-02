@@ -4,7 +4,8 @@ import { VroegsignaleringSimulator } from "./VroegsignaleringSimulator";
 
 export function Vroegsignalering() {
   const [showSimulator, setShowSimulator] = useState(false);
-  const pdfPath = "/Onderzoeksrapport+Vroegsignalering+-+Eerder+herkennen+en+oplossen+van+problemen.pdf";
+  // PDF path voor GitHub Pages (relatief pad vanuit public folder)
+  const pdfPath = "/5euro/Onderzoeksrapport+Vroegsignalering+-+Eerder+herkennen+en+oplossen+van+problemen.pdf";
 
   if (showSimulator) {
     return (
