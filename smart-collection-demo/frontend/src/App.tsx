@@ -60,11 +60,11 @@ function App() {
       {/* Navigation Tabs */}
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="flex space-x-8" aria-label="Tabs">
+          <nav className="flex space-x-8 overflow-x-auto scrollbar-hide" aria-label="Tabs" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
             <button
               onClick={() => setActiveTab("simulation")}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "simulation"
                     ? "border-blue-500 text-blue-600"
@@ -78,7 +78,7 @@ function App() {
             <button
               onClick={() => setActiveTab("analyze")}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "analyze"
                     ? "border-blue-500 text-blue-600"
@@ -93,7 +93,7 @@ function App() {
               onClick={() => setActiveTab("results")}
               disabled={!analysisResult}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "results"
                     ? "border-blue-500 text-blue-600"
@@ -108,7 +108,7 @@ function App() {
             <button
               onClick={() => setActiveTab("dashboard")}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "dashboard"
                     ? "border-blue-500 text-blue-600"
@@ -122,7 +122,7 @@ function App() {
             <button
               onClick={() => setActiveTab("events")}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "events"
                     ? "border-blue-500 text-blue-600"
@@ -136,7 +136,7 @@ function App() {
             <button
               onClick={() => setActiveTab("cbs")}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "cbs"
                     ? "border-blue-500 text-blue-600"
@@ -150,7 +150,7 @@ function App() {
             <button
               onClick={() => setActiveTab("problematiek")}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "problematiek"
                     ? "border-blue-500 text-blue-600"
@@ -164,7 +164,7 @@ function App() {
             <button
               onClick={() => setActiveTab("architecture")}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "architecture"
                     ? "border-blue-500 text-blue-600"
@@ -178,7 +178,7 @@ function App() {
             <button
               onClick={() => setActiveTab("vroegsignalering")}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "vroegsignalering"
                     ? "border-blue-500 text-blue-600"
@@ -192,7 +192,7 @@ function App() {
             <button
               onClick={() => setActiveTab("impact")}
               className={`
-                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap flex-shrink-0
                 ${
                   activeTab === "impact"
                     ? "border-blue-500 text-blue-600"
