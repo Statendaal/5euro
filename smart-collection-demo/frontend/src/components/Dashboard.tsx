@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Loader2, TrendingUp, Users, Euro, Home, AlertCircle } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { mockCBSDashboardData } from '../data/mockCBSData';
 
 export function Dashboard() {
   const [loading, setLoading] = useState(true);
@@ -13,12 +14,14 @@ export function Dashboard() {
   const loadDashboardData = async () => {
     setLoading(true);
     try {
-      // Load CBS data
+      // Try to fetch from backend first
       const response = await fetch('http://localhost:3001/api/v1/cbs/dashboard?jaar=2024-01');
       const result = await response.json();
       setCbsData(result);
     } catch (error) {
-      console.error('Failed to load CBS dashboard data:', error);
+      // Fallback to mock data for GitHub Pages or when backend is not available
+      console.log('Backend niet beschikbaar, gebruik mock CBS data');
+      setCbsData(mockCBSDashboardData);
     } finally {
       setLoading(false);
     }

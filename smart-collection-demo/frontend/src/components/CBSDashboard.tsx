@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Loader2, Users, TrendingDown, AlertCircle, MapPin, Briefcase, Heart } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { mockCBSDashboardData } from '../data/mockCBSData';
 
 interface CBSDashboardData {
   overview: Array<{
@@ -49,13 +50,15 @@ export function CBSDashboard() {
     setLoading(true);
     setError(null);
     try {
+      // Try to fetch from backend first
       const response = await fetch('http://localhost:3001/api/v1/cbs/dashboard?jaar=2024-01');
       if (!response.ok) throw new Error('Failed to fetch CBS data');
       const result = await response.json();
       setData(result);
     } catch (error) {
-      console.error('Failed to load CBS data:', error);
-      setError('Kon CBS data niet laden. Controleer of de backend draait.');
+      // Fallback to mock data for GitHub Pages or when backend is not available
+      console.log('Backend niet beschikbaar, gebruik mock CBS data');
+      setData(mockCBSDashboardData);
     } finally {
       setLoading(false);
     }
@@ -77,17 +80,11 @@ export function CBSDashboard() {
     );
   }
 
-  if (error || !data) {
+  if (!data) {
     return (
-      <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
-        <AlertCircle className="w-8 h-8 text-red-600 mx-auto mb-2" />
-        <p className="text-red-700">{error || 'Geen data beschikbaar'}</p>
-        <button
-          onClick={loadCBSData}
-          className="mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
-        >
-          Probeer opnieuw
-        </button>
+      <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 text-center">
+        <AlertCircle className="w-8 h-8 text-yellow-600 mx-auto mb-2" />
+        <p className="text-yellow-700">CBS data wordt geladen...</p>
       </div>
     );
   }
