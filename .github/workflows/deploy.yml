@@ -43,6 +43,12 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Create .nojekyll file
+        run: |
+          cd smart-collection-demo/frontend/dist
+          touch .nojekyll
+          echo "GitHub Pages" > .nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
