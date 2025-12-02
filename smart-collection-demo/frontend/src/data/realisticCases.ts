@@ -40,7 +40,7 @@ export const REALISTIC_CASES: DebtAnalysisRequest[] = [
   {
     debt: {
       amount: 145.00,
-      type: DebtType.HEALTHCARE_INSURANCE,
+      type: DebtType.ZORGVERZEKERING_PREMIE,
       originDate: '2024-08-01',
       dueDate: '2024-08-15',
     },
@@ -60,7 +60,7 @@ export const REALISTIC_CASES: DebtAnalysisRequest[] = [
   {
     debt: {
       amount: 285.00,
-      type: DebtType.MUNICIPALITY,
+      type: DebtType.AFVALSTOFFENHEFFING,
       originDate: '2024-06-01',
       dueDate: '2024-07-01',
     },
@@ -82,7 +82,7 @@ export const REALISTIC_CASES: DebtAnalysisRequest[] = [
   {
     debt: {
       amount: 450.00,
-      type: DebtType.TAX,
+      type: DebtType.VERKEERSBOETE,
       originDate: '2024-03-15',
       dueDate: '2024-04-15',
     },
@@ -124,7 +124,7 @@ export const REALISTIC_CASES: DebtAnalysisRequest[] = [
   {
     debt: {
       amount: 320.00,
-      type: DebtType.UTILITIES,
+      type: DebtType.BIJZONDERE_BIJSTAND,
       originDate: '2024-07-15',
       dueDate: '2024-08-15',
     },
@@ -147,7 +147,7 @@ export const REALISTIC_CASES: DebtAnalysisRequest[] = [
   {
     debt: {
       amount: 195.00,
-      type: DebtType.HEALTHCARE_INSURANCE,
+      type: DebtType.ZORGVERZEKERING_PREMIE,
       originDate: '2024-09-01',
       dueDate: '2024-09-15',
     },
@@ -191,7 +191,7 @@ export const REALISTIC_CASES: DebtAnalysisRequest[] = [
   {
     debt: {
       amount: 85.00,
-      type: DebtType.MUNICIPALITY,
+      type: DebtType.AFVALSTOFFENHEFFING,
       originDate: '2024-10-10',
       dueDate: '2024-10-25',
     },
@@ -216,7 +216,7 @@ export const REALISTIC_CASES: DebtAnalysisRequest[] = [
   {
     debt: {
       amount: 65.00,
-      type: DebtType.TAX,
+      type: DebtType.VERKEERSBOETE,
       originDate: '2024-10-20',
       dueDate: '2024-11-05',
     },

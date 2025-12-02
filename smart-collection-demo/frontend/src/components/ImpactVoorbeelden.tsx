@@ -1,7 +1,6 @@
 import { useState } from "react";
 import {
   TrendingDown,
-  TrendingUp,
   AlertTriangle,
   CheckCircle,
   Eye,

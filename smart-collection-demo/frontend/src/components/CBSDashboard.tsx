@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Loader2, Users, TrendingDown, AlertCircle, MapPin, Coins, Briefcase, Heart } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { Loader2, Users, TrendingDown, AlertCircle, MapPin, Briefcase, Heart } from 'lucide-react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 interface CBSDashboardData {
   overview: Array<{
@@ -197,7 +197,7 @@ export function CBSDashboard() {
                 fill="#8884d8"
                 dataKey="value"
               >
-                {householdData.map((entry, index) => (
+                {householdData.map((_entry, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>

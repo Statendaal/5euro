@@ -1,15 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   Play,
   Eye,
   ArrowRight,
   ArrowLeft,
   TrendingDown,
-  TrendingUp,
   Clock,
   Euro,
   Users,
-  AlertTriangle,
   CheckCircle,
   XCircle,
 } from "lucide-react";
@@ -26,9 +24,7 @@ import {
 import {
   vroegsignaleringScenarios,
   categorieLabels,
-  categorieDescriptions,
   VroegsignaleringScenario,
-  VroegsignaleringStep,
 } from "../data/vroegsignaleringScenarios";
 
 export function VroegsignaleringSimulator() {
@@ -123,7 +119,6 @@ export function VroegsignaleringSimulator() {
   if (selectedScenario) {
     const traditioneleSteps = selectedScenario.traditioneleAanpak;
     const vroegsignaleringSteps = selectedScenario.vroegsignaleringAanpak;
-    const maxSteps = Math.max(traditioneleSteps.length, vroegsignaleringSteps.length);
 
     const traditioneleTotaal = traditioneleSteps.reduce((sum, step) => sum + step.kosten, 0);
     const vroegsignaleringTotaal = vroegsignaleringSteps.reduce((sum, step) => sum + step.kosten, 0);

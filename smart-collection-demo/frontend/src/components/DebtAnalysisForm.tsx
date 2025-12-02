@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { analyzeDebt, getMockDebts } from '../api';
+import { analyzeDebt } from '../api';
 import { DebtAnalysisRequest, DebtAnalysisResponse, DebtType, IncomeSource, debtTypeLabels, incomeSourceLabels } from '../types';
 import { Loader2, Sparkles } from 'lucide-react';
 import { getRandomRealisticCase } from '../data/realisticCases';

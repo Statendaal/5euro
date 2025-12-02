@@ -1,0 +1,92 @@
+version: '3.8'
+
+services:
+  # NATS Server with JetStream enabled
+  nats:
+    image: nats:2.10-alpine
+    container_name: nats-jetstream
+    ports:
+      - "4222:4222"  # Client connections
+      - "8222:8222"  # HTTP monitoring
+      - "6222:6222"  # Cluster connections
+    command:
+      - "-js"                           # Enable JetStream
+      - "-sd"                           # Store directory
+      - "/data"
+      - "-m"                            # HTTP monitoring port
+      - "8222"
+      - "--max_payload"                 # Max message size
+      - "8MB"
+      - "--max_pending"                 # Max pending messages
+      - "128MB"
+    volumes:
+      - nats-data:/data
+    networks:
+      - event-network
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8222/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # NATS Monitoring (Prometheus exporter)
+  nats-exporter:
+    image: natsio/prometheus-nats-exporter:latest
+    container_name: nats-exporter
+    ports:
+      - "7777:7777"
+    command:
+      - "-varz"
+      - "-connz"
+      - "-routez"
+      - "-subz"
+      - "-jsz=all"
+      - "http://nats:8222"
+    depends_on:
+      - nats
+    networks:
+      - event-network
+
+  # Prometheus for metrics
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    networks:
+      - event-network
+    depends_on:
+      - nats-exporter
+
+  # Grafana for visualization
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources
+    networks:
+      - event-network
+    depends_on:
+      - prometheus
+
+volumes:
+  nats-data:
+  prometheus-data:
+  grafana-data:
+
+networks:
+  event-network:
+    driver: bridge

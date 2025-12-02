@@ -1,0 +1,27 @@
+# Event System Dependencies
+
+# Core
+pydantic>=2.0.0
+python-dateutil>=2.8.0
+
+# PostgreSQL
+psycopg2-binary>=2.9.0
+
+# NATS JetStream
+nats-py>=2.6.0
+
+# Monitoring & Metrics
+prometheus-client>=0.19.0
+
+# Async support
+asyncio>=3.4.3
+aiofiles>=23.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-benchmark>=4.0.0
+
+# Utilities
+python-json-logger>=2.0.0
+colorlog>=6.7.0

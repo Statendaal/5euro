@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Loader2, TrendingUp, Users, Euro, CheckCircle, Home, AlertCircle } from 'lucide-react';
+import { Loader2, TrendingUp, Users, Euro, Home, AlertCircle } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
 export function Dashboard() {
@@ -58,7 +58,6 @@ export function Dashboard() {
 
   // CBS data shows average debt is around €175 (from our training data)
   const avgDebtAmount = 175;
-  const totalDebtAmount = totalHouseholds * avgDebtAmount;
 
   // Estimate small debts (<€500): ~75% based on CBS patterns
   const smallDebtsPercentage = 0.75;
@@ -227,8 +226,8 @@ export function Dashboard() {
                 fill="#8884d8"
                 dataKey="value"
               >
-                {recommendationData.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.color} />
+                {recommendationData.map((rec, index) => (
+                  <Cell key={`cell-${index}`} fill={rec.color} />
                 ))}
               </Pie>
               <Tooltip formatter={(value: number) => formatNumber(value)} />
