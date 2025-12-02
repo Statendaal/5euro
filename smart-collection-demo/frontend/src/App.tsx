@@ -4,8 +4,11 @@ import { AnalysisResults } from "./components/AnalysisResults";
 import { Dashboard } from "./components/Dashboard";
 import { CBSDashboard } from "./components/CBSDashboard";
 import { Simulation } from "./components/Simulation";
+import { EventSimulation } from "./components/EventSimulation";
 import { Problematiek } from "./components/Problematiek";
 import { Architecture } from "./components/Architecture";
+import { Vroegsignalering } from "./components/Vroegsignalering";
+import { ImpactVoorbeelden } from "./components/ImpactVoorbeelden";
 import { DebtAnalysisResponse } from "./types";
 import {
   BarChart3,
@@ -15,9 +18,12 @@ import {
   Database,
   AlertCircle,
   Boxes,
+  Zap,
+  Eye,
+  Target,
 } from "lucide-react";
 
-type Tab = "analyze" | "results" | "dashboard" | "simulation" | "cbs" | "problematiek" | "architecture";
+type Tab = "analyze" | "results" | "dashboard" | "simulation" | "events" | "cbs" | "problematiek" | "architecture" | "vroegsignalering" | "impact";
 
 function App() {
   const [activeTab, setActiveTab] = useState<Tab>("simulation");
@@ -114,6 +120,20 @@ function App() {
               Dashboard
             </button>
             <button
+              onClick={() => setActiveTab("events")}
+              className={`
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                ${
+                  activeTab === "events"
+                    ? "border-blue-500 text-blue-600"
+                    : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                }
+              `}
+            >
+              <Zap className="w-5 h-5" />
+              Event Systems
+            </button>
+            <button
               onClick={() => setActiveTab("cbs")}
               className={`
                 flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
@@ -155,6 +175,34 @@ function App() {
               <Boxes className="w-5 h-5" />
               Architectuur
             </button>
+            <button
+              onClick={() => setActiveTab("vroegsignalering")}
+              className={`
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                ${
+                  activeTab === "vroegsignalering"
+                    ? "border-blue-500 text-blue-600"
+                    : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                }
+              `}
+            >
+              <Eye className="w-5 h-5" />
+              Vroegsignalering
+            </button>
+            <button
+              onClick={() => setActiveTab("impact")}
+              className={`
+                flex items-center gap-2 py-4 px-1 border-b-2 font-medium text-sm
+                ${
+                  activeTab === "impact"
+                    ? "border-blue-500 text-blue-600"
+                    : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                }
+              `}
+            >
+              <Target className="w-5 h-5" />
+              Impact
+            </button>
           </nav>
         </div>
       </div>
@@ -162,6 +210,7 @@ function App() {
       {/* Content */}
       <main className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
         {activeTab === "simulation" && <Simulation />}
+        {activeTab === "events" && <EventSimulation />}
         {activeTab === "analyze" && (
           <DebtAnalysisForm onAnalysisComplete={handleAnalysisComplete} />
         )}
@@ -172,6 +221,8 @@ function App() {
         {activeTab === "cbs" && <CBSDashboard />}
         {activeTab === "problematiek" && <Problematiek />}
         {activeTab === "architecture" && <Architecture />}
+        {activeTab === "vroegsignalering" && <Vroegsignalering />}
+        {activeTab === "impact" && <ImpactVoorbeelden />}
       </main>
 
       {/* Footer */}
